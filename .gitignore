@@ -39,3 +39,42 @@
 
 # debug information files
 *.dwo
+
+# VS Code
+.vscode/
+
+# CMake build directory
+build/
+
+# Python
+env
+__pycache__
+
+# Orchestrator
+failed-cmds*
+
+# Latex garbage
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.lb
+*.glo
+*.idx
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+*.glg
+*.glsdefs
+*.loa
+*.nlo
+*.nls
