@@ -156,7 +156,7 @@ int zstd_close_fn(void *cookie) {
 
 } // namespace
 
-pcap_reader_t::pcap_reader_t(const std::filesystem::path &file) {
+pcap_reader_t::pcap_reader_t(const std::filesystem::path &file) : pd(nullptr), assume_ip(false), pcap_start(0), total_pkts(0), start(0), end(0) {
   const std::vector<u8> signature = get_file_signature(file.string());
 
   static const std::vector<u8> zst_sig     = {0x28, 0xB5, 0x2F, 0xFD};
@@ -213,7 +213,6 @@ pcap_reader_t::pcap_reader_t(const std::filesystem::path &file) {
   case DLT_RAW:
     // Contains raw IP packets.
     assume_ip = true;
-    std::cerr << "Warning: DLT_RAW detected. Assuming all packets are IPv4." << std::endl;
     break;
   default: {
     panic("Unknown header type (%d)", link_hdr_type);

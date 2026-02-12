@@ -16,6 +16,23 @@ struct args_t {
   args_t() : epoch_duration(DEFAULT_EPOCH_DURATION_NS) {}
 };
 
+void trace_replayer(const std::filesystem::path &pcap_file, traffic_stats_tracker_t &traffic_stats_tracker) {
+  while (traffic_stats_tracker.report.end - traffic_stats_tracker.report.start < traffic_stats_tracker.clock.epoch_duration) {
+    const time_ns_t base_time = traffic_stats_tracker.report.end - traffic_stats_tracker.report.start;
+
+    pcap_reader_t reader(pcap_file);
+    packet_t packet;
+    while (reader.read_next_packet(packet)) {
+      packet.ts += base_time;
+      traffic_stats_tracker.feed_packet(packet);
+    }
+
+    std::cerr << "start:   " << traffic_stats_tracker.report.start << "\n";
+    std::cerr << "end:     " << traffic_stats_tracker.report.end << "\n";
+    std::cerr << "elapsed: " << (traffic_stats_tracker.report.end - traffic_stats_tracker.report.start) << "\n";
+  }
+}
+
 int main(int argc, char **argv) {
   args_t args;
 
@@ -31,13 +48,8 @@ int main(int argc, char **argv) {
     exit(1);
   }
 
-  pcap_reader_t reader(args.pcap_file);
   traffic_stats_tracker_t traffic_stats_tracker(args.epoch_duration);
-
-  packet_t packet;
-  while (reader.read_next_packet(packet)) {
-    traffic_stats_tracker.feed_packet(packet);
-  }
+  trace_replayer(args.pcap_file, traffic_stats_tracker);
 
   traffic_stats_tracker.generate_report();
   if (!args.output_report.empty()) {

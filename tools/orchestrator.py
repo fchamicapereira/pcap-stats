@@ -27,9 +27,9 @@ CURRENT_DIR = Path(os.path.abspath(os.path.dirname(__file__)))
 PROJECT_DIR = (CURRENT_DIR / "..").resolve()
 REPORTS_DIR = PROJECT_DIR / "reports"
 PLOTS_DIR = PROJECT_DIR / "plots"
+PLOT_SCRIPTS_DIR = PROJECT_DIR / "tools"
 
 PCAP_STATS_TRACKER_BIN = PROJECT_DIR / "build" / "bin" / "pcap-stats"
-PLOT_SCRIPT = PROJECT_DIR / "tools" / "plot_pcap_stats.py"
 
 DEFAULT_EPOCH_DURATION_NS = 1_000_000_000  # 1 second
 
@@ -440,7 +440,7 @@ def run_pcap_stats_tracker(
     )
 
 
-def plot_stats(
+def plot_flow_dts_us_cdf(
     pcap: Path,
     force_replot: bool,
     skip_execution: bool = False,
@@ -451,23 +451,159 @@ def plot_stats(
     report = REPORTS_DIR / f"{pcap.stem}.json"
 
     files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{pcap.stem}_flow_ipt_cdf.pdf"]
 
-    plots_suffixes = [
-        "fct_cdf",
-        "flow_ipt_cdf",
-        "pkt_bytes_cdf",
-        "pkts_per_flow_cdf",
-        "top_k_flows_bytes_cdf",
-        "top_k_flows_cdf",
-    ]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_{suffix}.pdf" for suffix in plots_suffixes]
-
-    cmd = f"{PLOT_SCRIPT} {report}"
+    cmd = f"./plot_flow_dts_us_cdf.py {report}"
 
     return Task(
-        f"run_ploting_script_{pcap.stem}",
+        f"run_plot_flow_dts_us_cdf_{pcap.stem}",
         cmd,
-        cwd=PLOT_SCRIPT.parent,
+        cwd=PLOT_SCRIPTS_DIR,
+        files_consumed=files_consumed,
+        files_produced=files_produced,
+        skip_execution=skip_execution,
+        show_cmds_output=show_cmds_output,
+        show_cmds=show_cmds,
+        ignore_skip_if_already_produced=force_replot,
+        silence=silence,
+    )
+
+
+def plot_flow_duration_us_cdf(
+    pcap: Path,
+    force_replot: bool,
+    skip_execution: bool = False,
+    show_cmds_output: bool = False,
+    show_cmds: bool = False,
+    silence: bool = False,
+) -> Task:
+    report = REPORTS_DIR / f"{pcap.stem}.json"
+
+    files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{pcap.stem}_fct_cdf.pdf"]
+
+    cmd = f"./plot_flow_duration_us_cdf.py {report}"
+
+    return Task(
+        f"run_plot_flow_duration_us_cdf_{pcap.stem}",
+        cmd,
+        cwd=PLOT_SCRIPTS_DIR,
+        files_consumed=files_consumed,
+        files_produced=files_produced,
+        skip_execution=skip_execution,
+        show_cmds_output=show_cmds_output,
+        show_cmds=show_cmds,
+        ignore_skip_if_already_produced=force_replot,
+        silence=silence,
+    )
+
+
+def plot_pkt_bytes_cdf(
+    pcap: Path,
+    force_replot: bool,
+    skip_execution: bool = False,
+    show_cmds_output: bool = False,
+    show_cmds: bool = False,
+    silence: bool = False,
+) -> Task:
+    report = REPORTS_DIR / f"{pcap.stem}.json"
+
+    files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{pcap.stem}_pkt_bytes_cdf.pdf"]
+
+    cmd = f"./plot_pkt_bytes_cdf.py {report}"
+
+    return Task(
+        f"run_plot_pkt_bytes_cdf_{pcap.stem}",
+        cmd,
+        cwd=PLOT_SCRIPTS_DIR,
+        files_consumed=files_consumed,
+        files_produced=files_produced,
+        skip_execution=skip_execution,
+        show_cmds_output=show_cmds_output,
+        show_cmds=show_cmds,
+        ignore_skip_if_already_produced=force_replot,
+        silence=silence,
+    )
+
+
+def plot_pkts_per_flow_cdf(
+    pcap: Path,
+    force_replot: bool,
+    skip_execution: bool = False,
+    show_cmds_output: bool = False,
+    show_cmds: bool = False,
+    silence: bool = False,
+) -> Task:
+    report = REPORTS_DIR / f"{pcap.stem}.json"
+
+    files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{pcap.stem}_pkts_per_flow_cdf.pdf"]
+
+    cmd = f"./plot_pkts_per_flow_cdf.py {report}"
+
+    return Task(
+        f"run_plot_pkts_per_flow_cdf_{pcap.stem}",
+        cmd,
+        cwd=PLOT_SCRIPTS_DIR,
+        files_consumed=files_consumed,
+        files_produced=files_produced,
+        skip_execution=skip_execution,
+        show_cmds_output=show_cmds_output,
+        show_cmds=show_cmds,
+        ignore_skip_if_already_produced=force_replot,
+        silence=silence,
+    )
+
+
+def plot_top_k_flows_bytes_cdf(
+    pcap: Path,
+    force_replot: bool,
+    skip_execution: bool = False,
+    show_cmds_output: bool = False,
+    show_cmds: bool = False,
+    silence: bool = False,
+) -> Task:
+    report = REPORTS_DIR / f"{pcap.stem}.json"
+
+    files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{pcap.stem}_top_k_flows_bytes_cdf.pdf"]
+
+    cmd = f"./plot_top_k_flows_bytes_cdf.py {report}"
+
+    return Task(
+        f"run_plot_top_k_flows_bytes_cdf_{pcap.stem}",
+        cmd,
+        cwd=PLOT_SCRIPTS_DIR,
+        files_consumed=files_consumed,
+        files_produced=files_produced,
+        skip_execution=skip_execution,
+        show_cmds_output=show_cmds_output,
+        show_cmds=show_cmds,
+        ignore_skip_if_already_produced=force_replot,
+        silence=silence,
+    )
+
+
+def plot_top_k_flows_cdf(
+    pcap: Path,
+    force_replot: bool,
+    skip_execution: bool = False,
+    show_cmds_output: bool = False,
+    show_cmds: bool = False,
+    silence: bool = False,
+) -> Task:
+    report = REPORTS_DIR / f"{pcap.stem}.json"
+
+    files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{pcap.stem}_top_k_flows_cdf.pdf"]
+
+    cmd = f"./plot_top_k_flows_cdf.py {report}"
+
+    return Task(
+        f"run_plot_top_k_flows_cdf_{pcap.stem}",
+        cmd,
+        cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
         files_produced=files_produced,
         skip_execution=skip_execution,
@@ -482,7 +618,6 @@ if __name__ == "__main__":
     parser = ArgumentParser(description="Orchestrator for executing tasks with dependencies")
 
     parser.add_argument("pcaps", nargs="+", type=Path, help="Paths to PCAP files to process")
-
     parser.add_argument("--epoch", type=int, default=DEFAULT_EPOCH_DURATION_NS, help="Epoch duration in nanoseconds for the pcap stats tracker")
 
     parser.add_argument("--force", action="store_true", help="Force execution of all tasks, even if their output files already exist")
@@ -526,16 +661,26 @@ if __name__ == "__main__":
             )
         )
 
-        orchestrator.add_task(
-            plot_stats(
-                pcap=pcap,
-                force_replot=args.force_replot or args.force,
-                skip_execution=args.dry_run,
-                show_cmds_output=args.show_cmds_output,
-                show_cmds=args.show_cmds,
-                silence=args.silence,
+        plotter_tasks = [
+            plot_flow_dts_us_cdf,
+            plot_flow_duration_us_cdf,
+            plot_pkt_bytes_cdf,
+            plot_pkts_per_flow_cdf,
+            plot_top_k_flows_bytes_cdf,
+            plot_top_k_flows_cdf,
+        ]
+
+        for plotter_task in plotter_tasks:
+            orchestrator.add_task(
+                plotter_task(
+                    pcap=pcap,
+                    force_replot=args.force_replot or args.force,
+                    skip_execution=args.dry_run,
+                    show_cmds_output=args.show_cmds_output,
+                    show_cmds=args.show_cmds,
+                    silence=args.silence,
+                )
             )
-        )
 
     if args.show_execution_plan:
         orchestrator.visualize()
