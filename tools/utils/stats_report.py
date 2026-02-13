@@ -8,10 +8,17 @@ class CDF(Struct):
     probabilities: list[float]
 
 
+class Epoch(Struct):
+    expired_flows: int
+    new_flows: int
+    concurrent_flows: int
+
+
 class StatsReport(Struct):
     start_utc_ns: int
     end_utc_ns: int
     total_pkts: int
+    total_bytes: int
     tcpudp_pkts: int
     pkt_bytes_avg: float
     pkt_bytes_stdev: float
@@ -29,6 +36,7 @@ class StatsReport(Struct):
     flow_dts_us_avg: float
     flow_dts_us_stdev: float
     flow_dts_us_cdf: CDF
+    epochs: list[Epoch]
 
 
 def parse_report(file: Path) -> StatsReport:

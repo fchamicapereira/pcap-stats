@@ -1,0 +1,18 @@
++--------------------------------------------------------------------+
+|  Report for equinix-nyc.dirA.20190117-130000-131000.UTC.anon.pcap  |
++----------------------------------+---------------------------------+
+| Total pkts                       | 375,864,712                     |
+| Total pkt bytes                  | 333,383,874,287 bytes           |
+| Avg pkt size                     | 887 bytes                       |
+| Bytes on the wire                | 340,901,168,527 bytes           |
+| Packet rate                      | 4,445,118,376 bps (626,441 pps) |
+| Elapsed                          | 9 minutes and 59 seconds        |
+| Avg epoch duration               | 1 second                        |
+| Epochs                           | 598                             |
+| Avg churn                        | 4,256,026 flows/min             |
+| Churn stdev                      | 276,580 flows/min               |
+| Avg new flows per epoch          | 71,171                          |
+| Stdev new flows per epoch        | 4,625                           |
+| Avg concurrent flows per epoch   | 80,292                          |
+| Stdev concurrent flows per epoch | 4,775                           |
++----------------------------------+---------------------------------+

@@ -6,7 +6,6 @@ from utils.plot_config import *
 from utils.stats_report import *
 from utils.plotters import *
 
-
 from pathlib import Path
 from argparse import ArgumentParser
 

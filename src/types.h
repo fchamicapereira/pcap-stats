@@ -27,7 +27,10 @@ using time_ps_t = i64;
 
 using pps_t = u64;
 using bps_t = u64;
-using Bps_t = u64;
+
+using kbps_t = u64;
+using Mbps_t = u64;
+using Gbps_t = u64;
 
 using fpm_t = u64;
 using fps_t = u64;

@@ -32,6 +32,7 @@ PLOT_SCRIPTS_DIR = PROJECT_DIR / "tools"
 PCAP_STATS_TRACKER_BIN = PROJECT_DIR / "build" / "bin" / "pcap-stats"
 
 DEFAULT_EPOCH_DURATION_NS = 1_000_000_000  # 1 second
+DEFAULT_RATES_MBPS = [100_000]
 
 
 class Task:
@@ -414,21 +415,32 @@ def build_pcap_stats_tracker(
 def run_pcap_stats_tracker(
     pcap: Path,
     epoch_duration_ns: int,
+    rate_mbps: Optional[int] = None,
     force: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    out_report = REPORTS_DIR / f"{pcap.stem}.json"
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        out_report = REPORTS_DIR / f"{pcap.stem}_{rate_mbps}Mbps.json"
+    else:
+        out_report = REPORTS_DIR / f"{pcap.stem}.json"
 
     files_consumed = [PCAP_STATS_TRACKER_BIN, pcap]
     files_produced = [out_report]
 
     cmd = f"{PCAP_STATS_TRACKER_BIN} {pcap} --out {out_report} --epoch {epoch_duration_ns}"
+    if rate_mbps is not None:
+        cmd += f" --mbps {rate_mbps}"
+
+    task_name = f"run_pcap_stats_tracker_{pcap.stem}"
+    if rate_mbps is not None:
+        task_name += f"_{rate_mbps}Mbps"
 
     return Task(
-        f"run_pcap_stats_tracker_{pcap.stem}",
+        task_name,
         cmd,
         files_consumed=files_consumed,
         files_produced=files_produced,
@@ -442,21 +454,27 @@ def run_pcap_stats_tracker(
 
 def plot_flow_dts_us_cdf(
     pcap: Path,
-    force_replot: bool,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    report = REPORTS_DIR / f"{pcap.stem}.json"
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
 
     files_consumed = [report]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_flow_ipt_cdf.pdf"]
+    files_produced = [PLOTS_DIR / f"{name}_flow_ipt_cdf.pdf"]
 
     cmd = f"./plot_flow_dts_us_cdf.py {report}"
 
     return Task(
-        f"run_plot_flow_dts_us_cdf_{pcap.stem}",
+        f"run_plot_flow_dts_us_cdf_{name}",
         cmd,
         cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
@@ -471,21 +489,27 @@ def plot_flow_dts_us_cdf(
 
 def plot_flow_duration_us_cdf(
     pcap: Path,
-    force_replot: bool,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    report = REPORTS_DIR / f"{pcap.stem}.json"
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
 
     files_consumed = [report]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_fct_cdf.pdf"]
+    files_produced = [PLOTS_DIR / f"{name}_fct_cdf.pdf"]
 
     cmd = f"./plot_flow_duration_us_cdf.py {report}"
 
     return Task(
-        f"run_plot_flow_duration_us_cdf_{pcap.stem}",
+        f"run_plot_flow_duration_us_cdf_{name}",
         cmd,
         cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
@@ -500,21 +524,27 @@ def plot_flow_duration_us_cdf(
 
 def plot_pkt_bytes_cdf(
     pcap: Path,
-    force_replot: bool,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    report = REPORTS_DIR / f"{pcap.stem}.json"
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
 
     files_consumed = [report]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_pkt_bytes_cdf.pdf"]
+    files_produced = [PLOTS_DIR / f"{name}_pkt_bytes_cdf.pdf"]
 
     cmd = f"./plot_pkt_bytes_cdf.py {report}"
 
     return Task(
-        f"run_plot_pkt_bytes_cdf_{pcap.stem}",
+        f"run_plot_pkt_bytes_cdf_{name}",
         cmd,
         cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
@@ -529,21 +559,27 @@ def plot_pkt_bytes_cdf(
 
 def plot_pkts_per_flow_cdf(
     pcap: Path,
-    force_replot: bool,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    report = REPORTS_DIR / f"{pcap.stem}.json"
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
 
     files_consumed = [report]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_pkts_per_flow_cdf.pdf"]
+    files_produced = [PLOTS_DIR / f"{name}_pkts_per_flow_cdf.pdf"]
 
     cmd = f"./plot_pkts_per_flow_cdf.py {report}"
 
     return Task(
-        f"run_plot_pkts_per_flow_cdf_{pcap.stem}",
+        f"run_plot_pkts_per_flow_cdf_{name}",
         cmd,
         cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
@@ -558,21 +594,27 @@ def plot_pkts_per_flow_cdf(
 
 def plot_top_k_flows_bytes_cdf(
     pcap: Path,
-    force_replot: bool,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    report = REPORTS_DIR / f"{pcap.stem}.json"
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
 
     files_consumed = [report]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_top_k_flows_bytes_cdf.pdf"]
+    files_produced = [PLOTS_DIR / f"{name}_top_k_flows_bytes_cdf.pdf"]
 
     cmd = f"./plot_top_k_flows_bytes_cdf.py {report}"
 
     return Task(
-        f"run_plot_top_k_flows_bytes_cdf_{pcap.stem}",
+        f"run_plot_top_k_flows_bytes_cdf_{name}",
         cmd,
         cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
@@ -587,21 +629,62 @@ def plot_top_k_flows_bytes_cdf(
 
 def plot_top_k_flows_cdf(
     pcap: Path,
-    force_replot: bool,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
     skip_execution: bool = False,
     show_cmds_output: bool = False,
     show_cmds: bool = False,
     silence: bool = False,
 ) -> Task:
-    report = REPORTS_DIR / f"{pcap.stem}.json"
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
 
     files_consumed = [report]
-    files_produced = [PLOTS_DIR / f"{pcap.stem}_top_k_flows_cdf.pdf"]
+    files_produced = [PLOTS_DIR / f"{name}_top_k_flows_cdf.pdf"]
 
     cmd = f"./plot_top_k_flows_cdf.py {report}"
 
     return Task(
-        f"run_plot_top_k_flows_cdf_{pcap.stem}",
+        f"run_plot_top_k_flows_cdf_{name}",
+        cmd,
+        cwd=PLOT_SCRIPTS_DIR,
+        files_consumed=files_consumed,
+        files_produced=files_produced,
+        skip_execution=skip_execution,
+        show_cmds_output=show_cmds_output,
+        show_cmds=show_cmds,
+        ignore_skip_if_already_produced=force_replot,
+        silence=silence,
+    )
+
+
+def build_stats_report_table(
+    pcap: Path,
+    rate_mbps: Optional[int] = None,
+    force_replot: bool = False,
+    skip_execution: bool = False,
+    show_cmds_output: bool = False,
+    show_cmds: bool = False,
+    silence: bool = False,
+) -> Task:
+    name = pcap.stem
+    if rate_mbps is not None:
+        assert rate_mbps > 0, "Rate in Mbps must be a positive integer"
+        name += f"_{rate_mbps}Mbps"
+
+    report = REPORTS_DIR / f"{name}.json"
+
+    files_consumed = [report]
+    files_produced = [PLOTS_DIR / f"{name}.txt"]
+
+    cmd = f"./build_stats_report_table.py {report}"
+
+    return Task(
+        f"run_build_stats_report_table_{name}",
         cmd,
         cwd=PLOT_SCRIPTS_DIR,
         files_consumed=files_consumed,
@@ -619,6 +702,7 @@ if __name__ == "__main__":
 
     parser.add_argument("pcaps", nargs="+", type=Path, help="Paths to PCAP files to process")
     parser.add_argument("--epoch", type=int, default=DEFAULT_EPOCH_DURATION_NS, help="Epoch duration in nanoseconds for the pcap stats tracker")
+    parser.add_argument("--rates-mbps", nargs="*", type=int, default=DEFAULT_RATES_MBPS, help="Rates in Mbps")
 
     parser.add_argument("--force", action="store_true", help="Force execution of all tasks, even if their output files already exist")
     parser.add_argument("--force-replot", action="store_true", help="Force re-plotting even if the output files already exist")
@@ -661,6 +745,20 @@ if __name__ == "__main__":
             )
         )
 
+        for rate_mbps in args.rates_mbps:
+            orchestrator.add_task(
+                run_pcap_stats_tracker(
+                    pcap=pcap,
+                    epoch_duration_ns=args.epoch,
+                    rate_mbps=rate_mbps,
+                    force=args.force_report or args.force,
+                    skip_execution=args.dry_run,
+                    show_cmds_output=args.show_cmds_output,
+                    show_cmds=args.show_cmds,
+                    silence=args.silence,
+                )
+            )
+
         plotter_tasks = [
             plot_flow_dts_us_cdf,
             plot_flow_duration_us_cdf,
@@ -668,6 +766,7 @@ if __name__ == "__main__":
             plot_pkts_per_flow_cdf,
             plot_top_k_flows_bytes_cdf,
             plot_top_k_flows_cdf,
+            build_stats_report_table,
         ]
 
         for plotter_task in plotter_tasks:
@@ -681,6 +780,19 @@ if __name__ == "__main__":
                     silence=args.silence,
                 )
             )
+
+            for rate_mbps in args.rates_mbps:
+                orchestrator.add_task(
+                    plotter_task(
+                        pcap=pcap,
+                        rate_mbps=rate_mbps,
+                        force_replot=args.force_replot or args.force,
+                        skip_execution=args.dry_run,
+                        show_cmds_output=args.show_cmds_output,
+                        show_cmds=args.show_cmds,
+                        silence=args.silence,
+                    )
+                )
 
     if args.show_execution_plan:
         orchestrator.visualize()

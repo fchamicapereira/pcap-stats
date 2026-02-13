@@ -231,8 +231,8 @@ struct sflow_t {
 
 struct packet_t {
   const u8 *pkt;
-  u16 hdrs_len;
-  u16 total_len;
+  bytes_t hdrs_len;
+  bytes_t total_len;
   time_ns_t ts;
   std::optional<flow_t> flow;
 };

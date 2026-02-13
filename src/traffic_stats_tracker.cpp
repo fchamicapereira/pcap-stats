@@ -8,24 +8,33 @@ using json = nlohmann::json;
 constexpr const u64 TRAFFIC_STATS_TRACKER_PROGRESS_PRINT_STEP = 1'000'000;
 
 void traffic_stats_tracker_t::feed_packet(const packet_t &pkt) {
+  if (report.total_pkts % TRAFFIC_STATS_TRACKER_PROGRESS_PRINT_STEP == 0) {
+    std::cerr << "[" << pkt.ts << "] Processed " << report.total_pkts << " packets..." << std::endl;
+  }
+
   report.end = pkt.ts;
   if (report.start == 0) {
     report.start = pkt.ts;
   }
 
   report.total_pkts++;
+  report.total_bytes += pkt.total_len;
   report.pkt_sizes_cdf.add(pkt.total_len);
+
+  if (clock.tick(pkt.ts)) {
+    concurrent_flows_per_epoch.emplace_back();
+    expired_flows_per_epoch.emplace_back();
+    new_flows_per_epoch.emplace_back();
+  }
 
   if (!pkt.flow.has_value()) {
     return;
   }
 
-  if (clock.tick(pkt.ts)) {
-    concurrent_flows_per_epoch.emplace_back();
-  }
-
-  if (report.total_pkts % TRAFFIC_STATS_TRACKER_PROGRESS_PRINT_STEP == 0) {
-    std::cerr << "[" << pkt.ts << "] Processed " << report.total_pkts << " packets..." << std::endl;
+  expired_flows_per_epoch.back() += flow_tracker.expire_flows(pkt.ts);
+  if (!flow_tracker.has_flow(pkt.flow.value())) {
+    flow_tracker.add_flow(pkt.flow.value(), pkt.ts);
+    new_flows_per_epoch.back()++;
   }
 
   report.tcpudp_pkts++;
@@ -57,6 +66,14 @@ void traffic_stats_tracker_t::generate_report() {
 
   for (const auto &flows : concurrent_flows_per_epoch) {
     report.concurrent_flows_per_epoch.add(flows.size());
+  }
+
+  for (size_t i = 0; i < expired_flows_per_epoch.size(); i++) {
+    report.epochs.push_back({
+        .expired_flows    = expired_flows_per_epoch[i],
+        .new_flows        = new_flows_per_epoch[i],
+        .concurrent_flows = concurrent_flows_per_epoch[i].size(),
+    });
   }
 
   std::vector<u64> pkts_per_flow_values;
@@ -101,6 +118,7 @@ void traffic_stats_tracker_t::dump_report_to_json_file(const std::filesystem::pa
   j["start_utc_ns"]                   = report.start;
   j["end_utc_ns"]                     = report.end;
   j["total_pkts"]                     = report.total_pkts;
+  j["total_bytes"]                    = report.total_bytes;
   j["tcpudp_pkts"]                    = report.tcpudp_pkts;
   j["pkt_bytes_avg"]                  = report.pkt_sizes_cdf.get_avg();
   j["pkt_bytes_stdev"]                = report.pkt_sizes_cdf.get_stdev();
@@ -153,6 +171,14 @@ void traffic_stats_tracker_t::dump_report_to_json_file(const std::filesystem::pa
   for (const auto &[v, p] : report.top_k_flows_bytes_cdf.get_cdf()) {
     j["top_k_flows_bytes_cdf"]["values"].push_back(v);
     j["top_k_flows_bytes_cdf"]["probabilities"].push_back(p);
+  }
+  j["epochs"] = json::array();
+  for (const auto &epoch : report.epochs) {
+    json je;
+    je["expired_flows"]    = epoch.expired_flows;
+    je["new_flows"]        = epoch.new_flows;
+    je["concurrent_flows"] = epoch.concurrent_flows;
+    j["epochs"].push_back(je);
   }
 
   fprintf(stderr, "\n");

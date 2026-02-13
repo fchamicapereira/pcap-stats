@@ -1,5 +1,2997 @@
 {
   "end_utc_ns": 1547730599999993000,
+  "epochs": [
+    {
+      "concurrent_flows": 80969,
+      "expired_flows": 0,
+      "new_flows": 80969
+    },
+    {
+      "concurrent_flows": 82989,
+      "expired_flows": 80969,
+      "new_flows": 74593
+    },
+    {
+      "concurrent_flows": 83053,
+      "expired_flows": 74593,
+      "new_flows": 73908
+    },
+    {
+      "concurrent_flows": 82816,
+      "expired_flows": 73908,
+      "new_flows": 73561
+    },
+    {
+      "concurrent_flows": 81332,
+      "expired_flows": 73561,
+      "new_flows": 72106
+    },
+    {
+      "concurrent_flows": 80167,
+      "expired_flows": 72106,
+      "new_flows": 70759
+    },
+    {
+      "concurrent_flows": 80149,
+      "expired_flows": 70759,
+      "new_flows": 70827
+    },
+    {
+      "concurrent_flows": 80617,
+      "expired_flows": 70827,
+      "new_flows": 71496
+    },
+    {
+      "concurrent_flows": 79460,
+      "expired_flows": 71496,
+      "new_flows": 70053
+    },
+    {
+      "concurrent_flows": 79894,
+      "expired_flows": 70053,
+      "new_flows": 70731
+    },
+    {
+      "concurrent_flows": 80313,
+      "expired_flows": 70731,
+      "new_flows": 70931
+    },
+    {
+      "concurrent_flows": 79822,
+      "expired_flows": 70931,
+      "new_flows": 70464
+    },
+    {
+      "concurrent_flows": 80149,
+      "expired_flows": 70464,
+      "new_flows": 70821
+    },
+    {
+      "concurrent_flows": 79933,
+      "expired_flows": 70821,
+      "new_flows": 70829
+    },
+    {
+      "concurrent_flows": 80440,
+      "expired_flows": 70829,
+      "new_flows": 71084
+    },
+    {
+      "concurrent_flows": 80353,
+      "expired_flows": 71084,
+      "new_flows": 70942
+    },
+    {
+      "concurrent_flows": 80676,
+      "expired_flows": 70942,
+      "new_flows": 71413
+    },
+    {
+      "concurrent_flows": 79708,
+      "expired_flows": 71413,
+      "new_flows": 70277
+    },
+    {
+      "concurrent_flows": 79298,
+      "expired_flows": 70277,
+      "new_flows": 70038
+    },
+    {
+      "concurrent_flows": 80477,
+      "expired_flows": 70038,
+      "new_flows": 71276
+    },
+    {
+      "concurrent_flows": 80912,
+      "expired_flows": 71276,
+      "new_flows": 71644
+    },
+    {
+      "concurrent_flows": 79748,
+      "expired_flows": 71644,
+      "new_flows": 70498
+    },
+    {
+      "concurrent_flows": 79937,
+      "expired_flows": 70498,
+      "new_flows": 70803
+    },
+    {
+      "concurrent_flows": 79898,
+      "expired_flows": 70803,
+      "new_flows": 70730
+    },
+    {
+      "concurrent_flows": 79238,
+      "expired_flows": 70730,
+      "new_flows": 70335
+    },
+    {
+      "concurrent_flows": 80077,
+      "expired_flows": 70335,
+      "new_flows": 70829
+    },
+    {
+      "concurrent_flows": 80617,
+      "expired_flows": 70829,
+      "new_flows": 71139
+    },
+    {
+      "concurrent_flows": 79969,
+      "expired_flows": 71139,
+      "new_flows": 70935
+    },
+    {
+      "concurrent_flows": 80606,
+      "expired_flows": 70935,
+      "new_flows": 71572
+    },
+    {
+      "concurrent_flows": 80456,
+      "expired_flows": 71572,
+      "new_flows": 71308
+    },
+    {
+      "concurrent_flows": 71129,
+      "expired_flows": 61784,
+      "new_flows": 60596
+    },
+    {
+      "concurrent_flows": 79633,
+      "expired_flows": 70120,
+      "new_flows": 79130
+    },
+    {
+      "concurrent_flows": 80297,
+      "expired_flows": 79130,
+      "new_flows": 71815
+    },
+    {
+      "concurrent_flows": 80187,
+      "expired_flows": 71815,
+      "new_flows": 71321
+    },
+    {
+      "concurrent_flows": 81408,
+      "expired_flows": 71321,
+      "new_flows": 72520
+    },
+    {
+      "concurrent_flows": 80543,
+      "expired_flows": 72520,
+      "new_flows": 71220
+    },
+    {
+      "concurrent_flows": 80833,
+      "expired_flows": 71220,
+      "new_flows": 71860
+    },
+    {
+      "concurrent_flows": 79695,
+      "expired_flows": 71860,
+      "new_flows": 70629
+    },
+    {
+      "concurrent_flows": 79717,
+      "expired_flows": 70629,
+      "new_flows": 70685
+    },
+    {
+      "concurrent_flows": 79913,
+      "expired_flows": 70685,
+      "new_flows": 70812
+    },
+    {
+      "concurrent_flows": 79993,
+      "expired_flows": 70811,
+      "new_flows": 71020
+    },
+    {
+      "concurrent_flows": 79530,
+      "expired_flows": 71021,
+      "new_flows": 70298
+    },
+    {
+      "concurrent_flows": 80149,
+      "expired_flows": 70298,
+      "new_flows": 70906
+    },
+    {
+      "concurrent_flows": 80457,
+      "expired_flows": 70906,
+      "new_flows": 71282
+    },
+    {
+      "concurrent_flows": 78959,
+      "expired_flows": 71282,
+      "new_flows": 69700
+    },
+    {
+      "concurrent_flows": 79122,
+      "expired_flows": 69700,
+      "new_flows": 69993
+    },
+    {
+      "concurrent_flows": 80217,
+      "expired_flows": 69993,
+      "new_flows": 71039
+    },
+    {
+      "concurrent_flows": 79171,
+      "expired_flows": 71039,
+      "new_flows": 69867
+    },
+    {
+      "concurrent_flows": 79662,
+      "expired_flows": 69867,
+      "new_flows": 70578
+    },
+    {
+      "concurrent_flows": 79578,
+      "expired_flows": 70578,
+      "new_flows": 70320
+    },
+    {
+      "concurrent_flows": 79528,
+      "expired_flows": 70319,
+      "new_flows": 70476
+    },
+    {
+      "concurrent_flows": 80342,
+      "expired_flows": 70477,
+      "new_flows": 71232
+    },
+    {
+      "concurrent_flows": 79869,
+      "expired_flows": 71232,
+      "new_flows": 70638
+    },
+    {
+      "concurrent_flows": 79273,
+      "expired_flows": 70638,
+      "new_flows": 70260
+    },
+    {
+      "concurrent_flows": 80252,
+      "expired_flows": 70260,
+      "new_flows": 70749
+    },
+    {
+      "concurrent_flows": 80448,
+      "expired_flows": 70749,
+      "new_flows": 71439
+    },
+    {
+      "concurrent_flows": 79845,
+      "expired_flows": 71439,
+      "new_flows": 70548
+    },
+    {
+      "concurrent_flows": 80302,
+      "expired_flows": 70548,
+      "new_flows": 71197
+    },
+    {
+      "concurrent_flows": 80533,
+      "expired_flows": 71197,
+      "new_flows": 71474
+    },
+    {
+      "concurrent_flows": 79169,
+      "expired_flows": 71474,
+      "new_flows": 70100
+    },
+    {
+      "concurrent_flows": 79136,
+      "expired_flows": 70100,
+      "new_flows": 69827
+    },
+    {
+      "concurrent_flows": 80656,
+      "expired_flows": 69827,
+      "new_flows": 71564
+    },
+    {
+      "concurrent_flows": 80326,
+      "expired_flows": 71564,
+      "new_flows": 71192
+    },
+    {
+      "concurrent_flows": 81515,
+      "expired_flows": 71191,
+      "new_flows": 72138
+    },
+    {
+      "concurrent_flows": 80547,
+      "expired_flows": 72139,
+      "new_flows": 71386
+    },
+    {
+      "concurrent_flows": 80380,
+      "expired_flows": 71386,
+      "new_flows": 71152
+    },
+    {
+      "concurrent_flows": 79452,
+      "expired_flows": 71152,
+      "new_flows": 70359
+    },
+    {
+      "concurrent_flows": 80530,
+      "expired_flows": 70359,
+      "new_flows": 71519
+    },
+    {
+      "concurrent_flows": 80467,
+      "expired_flows": 71518,
+      "new_flows": 71260
+    },
+    {
+      "concurrent_flows": 79364,
+      "expired_flows": 71261,
+      "new_flows": 70047
+    },
+    {
+      "concurrent_flows": 80544,
+      "expired_flows": 70047,
+      "new_flows": 71412
+    },
+    {
+      "concurrent_flows": 79298,
+      "expired_flows": 71412,
+      "new_flows": 70119
+    },
+    {
+      "concurrent_flows": 80549,
+      "expired_flows": 70119,
+      "new_flows": 71480
+    },
+    {
+      "concurrent_flows": 82741,
+      "expired_flows": 71480,
+      "new_flows": 73505
+    },
+    {
+      "concurrent_flows": 79642,
+      "expired_flows": 73505,
+      "new_flows": 70560
+    },
+    {
+      "concurrent_flows": 80441,
+      "expired_flows": 70560,
+      "new_flows": 71267
+    },
+    {
+      "concurrent_flows": 79281,
+      "expired_flows": 71267,
+      "new_flows": 70102
+    },
+    {
+      "concurrent_flows": 79659,
+      "expired_flows": 70102,
+      "new_flows": 70769
+    },
+    {
+      "concurrent_flows": 80607,
+      "expired_flows": 70769,
+      "new_flows": 71487
+    },
+    {
+      "concurrent_flows": 79880,
+      "expired_flows": 71487,
+      "new_flows": 70599
+    },
+    {
+      "concurrent_flows": 80450,
+      "expired_flows": 70598,
+      "new_flows": 70863
+    },
+    {
+      "concurrent_flows": 79705,
+      "expired_flows": 70864,
+      "new_flows": 70663
+    },
+    {
+      "concurrent_flows": 79066,
+      "expired_flows": 70662,
+      "new_flows": 69966
+    },
+    {
+      "concurrent_flows": 80051,
+      "expired_flows": 69967,
+      "new_flows": 70925
+    },
+    {
+      "concurrent_flows": 78344,
+      "expired_flows": 70925,
+      "new_flows": 69093
+    },
+    {
+      "concurrent_flows": 78756,
+      "expired_flows": 69093,
+      "new_flows": 69737
+    },
+    {
+      "concurrent_flows": 80409,
+      "expired_flows": 69736,
+      "new_flows": 71243
+    },
+    {
+      "concurrent_flows": 79787,
+      "expired_flows": 71244,
+      "new_flows": 70567
+    },
+    {
+      "concurrent_flows": 79711,
+      "expired_flows": 70567,
+      "new_flows": 70606
+    },
+    {
+      "concurrent_flows": 78995,
+      "expired_flows": 70605,
+      "new_flows": 69838
+    },
+    {
+      "concurrent_flows": 78928,
+      "expired_flows": 69839,
+      "new_flows": 69779
+    },
+    {
+      "concurrent_flows": 79620,
+      "expired_flows": 69779,
+      "new_flows": 70375
+    },
+    {
+      "concurrent_flows": 79186,
+      "expired_flows": 70375,
+      "new_flows": 70103
+    },
+    {
+      "concurrent_flows": 79572,
+      "expired_flows": 70103,
+      "new_flows": 70574
+    },
+    {
+      "concurrent_flows": 79293,
+      "expired_flows": 70574,
+      "new_flows": 70090
+    },
+    {
+      "concurrent_flows": 79115,
+      "expired_flows": 70090,
+      "new_flows": 69896
+    },
+    {
+      "concurrent_flows": 79654,
+      "expired_flows": 69896,
+      "new_flows": 70465
+    },
+    {
+      "concurrent_flows": 79409,
+      "expired_flows": 70465,
+      "new_flows": 70323
+    },
+    {
+      "concurrent_flows": 78957,
+      "expired_flows": 70323,
+      "new_flows": 69878
+    },
+    {
+      "concurrent_flows": 79201,
+      "expired_flows": 69878,
+      "new_flows": 70095
+    },
+    {
+      "concurrent_flows": 79615,
+      "expired_flows": 70095,
+      "new_flows": 70536
+    },
+    {
+      "concurrent_flows": 80899,
+      "expired_flows": 70536,
+      "new_flows": 71789
+    },
+    {
+      "concurrent_flows": 79276,
+      "expired_flows": 71789,
+      "new_flows": 70096
+    },
+    {
+      "concurrent_flows": 80081,
+      "expired_flows": 70096,
+      "new_flows": 70911
+    },
+    {
+      "concurrent_flows": 80145,
+      "expired_flows": 70911,
+      "new_flows": 71107
+    },
+    {
+      "concurrent_flows": 79108,
+      "expired_flows": 71106,
+      "new_flows": 70053
+    },
+    {
+      "concurrent_flows": 78929,
+      "expired_flows": 70054,
+      "new_flows": 69948
+    },
+    {
+      "concurrent_flows": 80006,
+      "expired_flows": 69948,
+      "new_flows": 70716
+    },
+    {
+      "concurrent_flows": 79246,
+      "expired_flows": 70716,
+      "new_flows": 70064
+    },
+    {
+      "concurrent_flows": 80310,
+      "expired_flows": 70064,
+      "new_flows": 70995
+    },
+    {
+      "concurrent_flows": 79008,
+      "expired_flows": 70995,
+      "new_flows": 69849
+    },
+    {
+      "concurrent_flows": 80434,
+      "expired_flows": 69849,
+      "new_flows": 71398
+    },
+    {
+      "concurrent_flows": 79245,
+      "expired_flows": 71398,
+      "new_flows": 70299
+    },
+    {
+      "concurrent_flows": 78139,
+      "expired_flows": 70299,
+      "new_flows": 69077
+    },
+    {
+      "concurrent_flows": 79642,
+      "expired_flows": 69077,
+      "new_flows": 70546
+    },
+    {
+      "concurrent_flows": 79408,
+      "expired_flows": 70546,
+      "new_flows": 70324
+    },
+    {
+      "concurrent_flows": 79415,
+      "expired_flows": 70324,
+      "new_flows": 70262
+    },
+    {
+      "concurrent_flows": 79716,
+      "expired_flows": 70262,
+      "new_flows": 70625
+    },
+    {
+      "concurrent_flows": 80171,
+      "expired_flows": 70625,
+      "new_flows": 70913
+    },
+    {
+      "concurrent_flows": 79648,
+      "expired_flows": 70913,
+      "new_flows": 70359
+    },
+    {
+      "concurrent_flows": 79956,
+      "expired_flows": 70359,
+      "new_flows": 70682
+    },
+    {
+      "concurrent_flows": 79629,
+      "expired_flows": 70682,
+      "new_flows": 70358
+    },
+    {
+      "concurrent_flows": 79706,
+      "expired_flows": 70358,
+      "new_flows": 70415
+    },
+    {
+      "concurrent_flows": 79832,
+      "expired_flows": 70415,
+      "new_flows": 70603
+    },
+    {
+      "concurrent_flows": 79731,
+      "expired_flows": 70603,
+      "new_flows": 70527
+    },
+    {
+      "concurrent_flows": 79483,
+      "expired_flows": 70527,
+      "new_flows": 70199
+    },
+    {
+      "concurrent_flows": 79308,
+      "expired_flows": 70199,
+      "new_flows": 70050
+    },
+    {
+      "concurrent_flows": 79187,
+      "expired_flows": 70050,
+      "new_flows": 69995
+    },
+    {
+      "concurrent_flows": 79892,
+      "expired_flows": 69995,
+      "new_flows": 70619
+    },
+    {
+      "concurrent_flows": 79503,
+      "expired_flows": 70619,
+      "new_flows": 70091
+    },
+    {
+      "concurrent_flows": 78769,
+      "expired_flows": 70091,
+      "new_flows": 69350
+    },
+    {
+      "concurrent_flows": 79814,
+      "expired_flows": 69350,
+      "new_flows": 70459
+    },
+    {
+      "concurrent_flows": 79198,
+      "expired_flows": 70459,
+      "new_flows": 69829
+    },
+    {
+      "concurrent_flows": 79031,
+      "expired_flows": 69829,
+      "new_flows": 69839
+    },
+    {
+      "concurrent_flows": 79690,
+      "expired_flows": 69839,
+      "new_flows": 70402
+    },
+    {
+      "concurrent_flows": 79514,
+      "expired_flows": 70402,
+      "new_flows": 70371
+    },
+    {
+      "concurrent_flows": 79389,
+      "expired_flows": 70371,
+      "new_flows": 70093
+    },
+    {
+      "concurrent_flows": 80308,
+      "expired_flows": 70092,
+      "new_flows": 70917
+    },
+    {
+      "concurrent_flows": 79129,
+      "expired_flows": 70918,
+      "new_flows": 69961
+    },
+    {
+      "concurrent_flows": 80103,
+      "expired_flows": 69961,
+      "new_flows": 70849
+    },
+    {
+      "concurrent_flows": 80064,
+      "expired_flows": 70849,
+      "new_flows": 70612
+    },
+    {
+      "concurrent_flows": 80094,
+      "expired_flows": 70612,
+      "new_flows": 70743
+    },
+    {
+      "concurrent_flows": 79128,
+      "expired_flows": 70743,
+      "new_flows": 69850
+    },
+    {
+      "concurrent_flows": 79066,
+      "expired_flows": 69850,
+      "new_flows": 69795
+    },
+    {
+      "concurrent_flows": 79061,
+      "expired_flows": 69795,
+      "new_flows": 69647
+    },
+    {
+      "concurrent_flows": 77652,
+      "expired_flows": 69647,
+      "new_flows": 68237
+    },
+    {
+      "concurrent_flows": 79495,
+      "expired_flows": 68237,
+      "new_flows": 70805
+    },
+    {
+      "concurrent_flows": 79893,
+      "expired_flows": 70805,
+      "new_flows": 70628
+    },
+    {
+      "concurrent_flows": 79006,
+      "expired_flows": 70628,
+      "new_flows": 69562
+    },
+    {
+      "concurrent_flows": 79451,
+      "expired_flows": 69562,
+      "new_flows": 70233
+    },
+    {
+      "concurrent_flows": 79429,
+      "expired_flows": 70233,
+      "new_flows": 70090
+    },
+    {
+      "concurrent_flows": 79011,
+      "expired_flows": 70090,
+      "new_flows": 69878
+    },
+    {
+      "concurrent_flows": 83085,
+      "expired_flows": 69878,
+      "new_flows": 73941
+    },
+    {
+      "concurrent_flows": 78635,
+      "expired_flows": 73941,
+      "new_flows": 69522
+    },
+    {
+      "concurrent_flows": 78400,
+      "expired_flows": 69521,
+      "new_flows": 69217
+    },
+    {
+      "concurrent_flows": 80084,
+      "expired_flows": 69218,
+      "new_flows": 71041
+    },
+    {
+      "concurrent_flows": 81379,
+      "expired_flows": 71041,
+      "new_flows": 72319
+    },
+    {
+      "concurrent_flows": 78858,
+      "expired_flows": 72318,
+      "new_flows": 69821
+    },
+    {
+      "concurrent_flows": 79510,
+      "expired_flows": 69822,
+      "new_flows": 70320
+    },
+    {
+      "concurrent_flows": 79799,
+      "expired_flows": 70320,
+      "new_flows": 70804
+    },
+    {
+      "concurrent_flows": 81134,
+      "expired_flows": 70804,
+      "new_flows": 71889
+    },
+    {
+      "concurrent_flows": 79452,
+      "expired_flows": 71889,
+      "new_flows": 70515
+    },
+    {
+      "concurrent_flows": 78782,
+      "expired_flows": 70515,
+      "new_flows": 69571
+    },
+    {
+      "concurrent_flows": 79575,
+      "expired_flows": 69571,
+      "new_flows": 70444
+    },
+    {
+      "concurrent_flows": 80332,
+      "expired_flows": 70444,
+      "new_flows": 71062
+    },
+    {
+      "concurrent_flows": 80273,
+      "expired_flows": 71062,
+      "new_flows": 71227
+    },
+    {
+      "concurrent_flows": 79926,
+      "expired_flows": 71227,
+      "new_flows": 70702
+    },
+    {
+      "concurrent_flows": 78815,
+      "expired_flows": 70702,
+      "new_flows": 69713
+    },
+    {
+      "concurrent_flows": 79403,
+      "expired_flows": 69713,
+      "new_flows": 70428
+    },
+    {
+      "concurrent_flows": 79115,
+      "expired_flows": 70428,
+      "new_flows": 69929
+    },
+    {
+      "concurrent_flows": 78817,
+      "expired_flows": 69929,
+      "new_flows": 69644
+    },
+    {
+      "concurrent_flows": 78618,
+      "expired_flows": 69644,
+      "new_flows": 69463
+    },
+    {
+      "concurrent_flows": 79129,
+      "expired_flows": 69463,
+      "new_flows": 70123
+    },
+    {
+      "concurrent_flows": 79127,
+      "expired_flows": 70123,
+      "new_flows": 69896
+    },
+    {
+      "concurrent_flows": 78835,
+      "expired_flows": 69896,
+      "new_flows": 69499
+    },
+    {
+      "concurrent_flows": 78443,
+      "expired_flows": 69499,
+      "new_flows": 69266
+    },
+    {
+      "concurrent_flows": 78788,
+      "expired_flows": 69266,
+      "new_flows": 69602
+    },
+    {
+      "concurrent_flows": 78765,
+      "expired_flows": 69602,
+      "new_flows": 69765
+    },
+    {
+      "concurrent_flows": 78830,
+      "expired_flows": 69765,
+      "new_flows": 69568
+    },
+    {
+      "concurrent_flows": 78772,
+      "expired_flows": 69568,
+      "new_flows": 69694
+    },
+    {
+      "concurrent_flows": 79507,
+      "expired_flows": 69694,
+      "new_flows": 70374
+    },
+    {
+      "concurrent_flows": 79446,
+      "expired_flows": 70374,
+      "new_flows": 70179
+    },
+    {
+      "concurrent_flows": 80761,
+      "expired_flows": 70179,
+      "new_flows": 71635
+    },
+    {
+      "concurrent_flows": 80217,
+      "expired_flows": 71635,
+      "new_flows": 70954
+    },
+    {
+      "concurrent_flows": 80168,
+      "expired_flows": 70953,
+      "new_flows": 70705
+    },
+    {
+      "concurrent_flows": 80223,
+      "expired_flows": 70706,
+      "new_flows": 70997
+    },
+    {
+      "concurrent_flows": 82181,
+      "expired_flows": 70996,
+      "new_flows": 72900
+    },
+    {
+      "concurrent_flows": 79292,
+      "expired_flows": 72901,
+      "new_flows": 70174
+    },
+    {
+      "concurrent_flows": 80602,
+      "expired_flows": 70174,
+      "new_flows": 71487
+    },
+    {
+      "concurrent_flows": 79790,
+      "expired_flows": 71487,
+      "new_flows": 70536
+    },
+    {
+      "concurrent_flows": 79768,
+      "expired_flows": 70536,
+      "new_flows": 70433
+    },
+    {
+      "concurrent_flows": 79409,
+      "expired_flows": 70433,
+      "new_flows": 70215
+    },
+    {
+      "concurrent_flows": 79909,
+      "expired_flows": 70214,
+      "new_flows": 70919
+    },
+    {
+      "concurrent_flows": 79622,
+      "expired_flows": 70920,
+      "new_flows": 70341
+    },
+    {
+      "concurrent_flows": 80543,
+      "expired_flows": 70341,
+      "new_flows": 71361
+    },
+    {
+      "concurrent_flows": 79134,
+      "expired_flows": 71361,
+      "new_flows": 70064
+    },
+    {
+      "concurrent_flows": 79194,
+      "expired_flows": 70064,
+      "new_flows": 70100
+    },
+    {
+      "concurrent_flows": 80146,
+      "expired_flows": 70100,
+      "new_flows": 71060
+    },
+    {
+      "concurrent_flows": 80461,
+      "expired_flows": 71060,
+      "new_flows": 71175
+    },
+    {
+      "concurrent_flows": 79963,
+      "expired_flows": 71175,
+      "new_flows": 70816
+    },
+    {
+      "concurrent_flows": 80075,
+      "expired_flows": 70816,
+      "new_flows": 70997
+    },
+    {
+      "concurrent_flows": 79353,
+      "expired_flows": 70997,
+      "new_flows": 69952
+    },
+    {
+      "concurrent_flows": 80305,
+      "expired_flows": 69952,
+      "new_flows": 71298
+    },
+    {
+      "concurrent_flows": 81169,
+      "expired_flows": 71298,
+      "new_flows": 72099
+    },
+    {
+      "concurrent_flows": 79875,
+      "expired_flows": 72098,
+      "new_flows": 70670
+    },
+    {
+      "concurrent_flows": 80280,
+      "expired_flows": 70670,
+      "new_flows": 70957
+    },
+    {
+      "concurrent_flows": 82418,
+      "expired_flows": 70958,
+      "new_flows": 73050
+    },
+    {
+      "concurrent_flows": 80810,
+      "expired_flows": 73050,
+      "new_flows": 71652
+    },
+    {
+      "concurrent_flows": 80674,
+      "expired_flows": 71652,
+      "new_flows": 71418
+    },
+    {
+      "concurrent_flows": 80298,
+      "expired_flows": 71418,
+      "new_flows": 71115
+    },
+    {
+      "concurrent_flows": 80975,
+      "expired_flows": 71115,
+      "new_flows": 71604
+    },
+    {
+      "concurrent_flows": 80592,
+      "expired_flows": 71604,
+      "new_flows": 71204
+    },
+    {
+      "concurrent_flows": 80590,
+      "expired_flows": 71204,
+      "new_flows": 71470
+    },
+    {
+      "concurrent_flows": 80180,
+      "expired_flows": 71470,
+      "new_flows": 70838
+    },
+    {
+      "concurrent_flows": 80105,
+      "expired_flows": 70838,
+      "new_flows": 70802
+    },
+    {
+      "concurrent_flows": 79957,
+      "expired_flows": 70802,
+      "new_flows": 70659
+    },
+    {
+      "concurrent_flows": 79582,
+      "expired_flows": 70659,
+      "new_flows": 70386
+    },
+    {
+      "concurrent_flows": 84168,
+      "expired_flows": 70386,
+      "new_flows": 74820
+    },
+    {
+      "concurrent_flows": 79965,
+      "expired_flows": 74820,
+      "new_flows": 70734
+    },
+    {
+      "concurrent_flows": 80363,
+      "expired_flows": 70734,
+      "new_flows": 70934
+    },
+    {
+      "concurrent_flows": 78423,
+      "expired_flows": 68743,
+      "new_flows": 68602
+    },
+    {
+      "concurrent_flows": 80382,
+      "expired_flows": 70793,
+      "new_flows": 80382
+    },
+    {
+      "concurrent_flows": 79877,
+      "expired_flows": 80380,
+      "new_flows": 71731
+    },
+    {
+      "concurrent_flows": 80496,
+      "expired_flows": 71733,
+      "new_flows": 71744
+    },
+    {
+      "concurrent_flows": 79735,
+      "expired_flows": 71744,
+      "new_flows": 70611
+    },
+    {
+      "concurrent_flows": 79703,
+      "expired_flows": 70611,
+      "new_flows": 70821
+    },
+    {
+      "concurrent_flows": 80241,
+      "expired_flows": 70820,
+      "new_flows": 70979
+    },
+    {
+      "concurrent_flows": 80056,
+      "expired_flows": 70980,
+      "new_flows": 70942
+    },
+    {
+      "concurrent_flows": 81001,
+      "expired_flows": 70942,
+      "new_flows": 71860
+    },
+    {
+      "concurrent_flows": 80990,
+      "expired_flows": 71860,
+      "new_flows": 71587
+    },
+    {
+      "concurrent_flows": 79912,
+      "expired_flows": 71587,
+      "new_flows": 70916
+    },
+    {
+      "concurrent_flows": 80180,
+      "expired_flows": 70916,
+      "new_flows": 70865
+    },
+    {
+      "concurrent_flows": 80799,
+      "expired_flows": 70865,
+      "new_flows": 71529
+    },
+    {
+      "concurrent_flows": 79998,
+      "expired_flows": 71529,
+      "new_flows": 70842
+    },
+    {
+      "concurrent_flows": 80735,
+      "expired_flows": 70842,
+      "new_flows": 71469
+    },
+    {
+      "concurrent_flows": 80353,
+      "expired_flows": 71469,
+      "new_flows": 70976
+    },
+    {
+      "concurrent_flows": 79342,
+      "expired_flows": 70976,
+      "new_flows": 70004
+    },
+    {
+      "concurrent_flows": 79722,
+      "expired_flows": 70004,
+      "new_flows": 70551
+    },
+    {
+      "concurrent_flows": 80640,
+      "expired_flows": 70551,
+      "new_flows": 71445
+    },
+    {
+      "concurrent_flows": 80773,
+      "expired_flows": 71445,
+      "new_flows": 71390
+    },
+    {
+      "concurrent_flows": 80369,
+      "expired_flows": 71390,
+      "new_flows": 71010
+    },
+    {
+      "concurrent_flows": 81774,
+      "expired_flows": 71010,
+      "new_flows": 72362
+    },
+    {
+      "concurrent_flows": 79901,
+      "expired_flows": 72362,
+      "new_flows": 70792
+    },
+    {
+      "concurrent_flows": 79633,
+      "expired_flows": 70792,
+      "new_flows": 70468
+    },
+    {
+      "concurrent_flows": 81085,
+      "expired_flows": 70467,
+      "new_flows": 71939
+    },
+    {
+      "concurrent_flows": 79858,
+      "expired_flows": 71940,
+      "new_flows": 70769
+    },
+    {
+      "concurrent_flows": 80681,
+      "expired_flows": 70769,
+      "new_flows": 71383
+    },
+    {
+      "concurrent_flows": 79931,
+      "expired_flows": 71383,
+      "new_flows": 70656
+    },
+    {
+      "concurrent_flows": 79085,
+      "expired_flows": 70655,
+      "new_flows": 69862
+    },
+    {
+      "concurrent_flows": 79537,
+      "expired_flows": 69863,
+      "new_flows": 70399
+    },
+    {
+      "concurrent_flows": 79065,
+      "expired_flows": 70399,
+      "new_flows": 70067
+    },
+    {
+      "concurrent_flows": 79825,
+      "expired_flows": 70067,
+      "new_flows": 70603
+    },
+    {
+      "concurrent_flows": 79726,
+      "expired_flows": 70603,
+      "new_flows": 70627
+    },
+    {
+      "concurrent_flows": 79703,
+      "expired_flows": 70626,
+      "new_flows": 70412
+    },
+    {
+      "concurrent_flows": 80106,
+      "expired_flows": 70412,
+      "new_flows": 70867
+    },
+    {
+      "concurrent_flows": 79992,
+      "expired_flows": 70868,
+      "new_flows": 70758
+    },
+    {
+      "concurrent_flows": 81477,
+      "expired_flows": 70758,
+      "new_flows": 72004
+    },
+    {
+      "concurrent_flows": 80467,
+      "expired_flows": 72002,
+      "new_flows": 71135
+    },
+    {
+      "concurrent_flows": 80878,
+      "expired_flows": 71137,
+      "new_flows": 71485
+    },
+    {
+      "concurrent_flows": 81564,
+      "expired_flows": 71485,
+      "new_flows": 72241
+    },
+    {
+      "concurrent_flows": 80370,
+      "expired_flows": 72240,
+      "new_flows": 71202
+    },
+    {
+      "concurrent_flows": 79999,
+      "expired_flows": 71203,
+      "new_flows": 70770
+    },
+    {
+      "concurrent_flows": 80312,
+      "expired_flows": 70770,
+      "new_flows": 71075
+    },
+    {
+      "concurrent_flows": 81576,
+      "expired_flows": 71075,
+      "new_flows": 72327
+    },
+    {
+      "concurrent_flows": 81067,
+      "expired_flows": 72327,
+      "new_flows": 71831
+    },
+    {
+      "concurrent_flows": 80456,
+      "expired_flows": 71831,
+      "new_flows": 71148
+    },
+    {
+      "concurrent_flows": 80899,
+      "expired_flows": 71148,
+      "new_flows": 71799
+    },
+    {
+      "concurrent_flows": 81987,
+      "expired_flows": 71799,
+      "new_flows": 72639
+    },
+    {
+      "concurrent_flows": 81016,
+      "expired_flows": 72639,
+      "new_flows": 71772
+    },
+    {
+      "concurrent_flows": 80164,
+      "expired_flows": 71772,
+      "new_flows": 70796
+    },
+    {
+      "concurrent_flows": 80601,
+      "expired_flows": 70796,
+      "new_flows": 71183
+    },
+    {
+      "concurrent_flows": 80217,
+      "expired_flows": 71183,
+      "new_flows": 71327
+    },
+    {
+      "concurrent_flows": 81634,
+      "expired_flows": 71327,
+      "new_flows": 72338
+    },
+    {
+      "concurrent_flows": 81052,
+      "expired_flows": 72338,
+      "new_flows": 71614
+    },
+    {
+      "concurrent_flows": 80927,
+      "expired_flows": 71614,
+      "new_flows": 71812
+    },
+    {
+      "concurrent_flows": 79723,
+      "expired_flows": 71812,
+      "new_flows": 70562
+    },
+    {
+      "concurrent_flows": 81158,
+      "expired_flows": 70562,
+      "new_flows": 72229
+    },
+    {
+      "concurrent_flows": 80144,
+      "expired_flows": 72229,
+      "new_flows": 70889
+    },
+    {
+      "concurrent_flows": 80591,
+      "expired_flows": 70889,
+      "new_flows": 71460
+    },
+    {
+      "concurrent_flows": 80915,
+      "expired_flows": 71460,
+      "new_flows": 71821
+    },
+    {
+      "concurrent_flows": 80693,
+      "expired_flows": 71821,
+      "new_flows": 71269
+    },
+    {
+      "concurrent_flows": 80524,
+      "expired_flows": 71269,
+      "new_flows": 71237
+    },
+    {
+      "concurrent_flows": 81147,
+      "expired_flows": 71237,
+      "new_flows": 72056
+    },
+    {
+      "concurrent_flows": 81522,
+      "expired_flows": 72055,
+      "new_flows": 72123
+    },
+    {
+      "concurrent_flows": 81144,
+      "expired_flows": 72124,
+      "new_flows": 71861
+    },
+    {
+      "concurrent_flows": 81205,
+      "expired_flows": 71861,
+      "new_flows": 71822
+    },
+    {
+      "concurrent_flows": 80297,
+      "expired_flows": 71822,
+      "new_flows": 71049
+    },
+    {
+      "concurrent_flows": 81566,
+      "expired_flows": 71049,
+      "new_flows": 72390
+    },
+    {
+      "concurrent_flows": 81597,
+      "expired_flows": 72390,
+      "new_flows": 72135
+    },
+    {
+      "concurrent_flows": 79749,
+      "expired_flows": 72135,
+      "new_flows": 70331
+    },
+    {
+      "concurrent_flows": 80710,
+      "expired_flows": 70331,
+      "new_flows": 71565
+    },
+    {
+      "concurrent_flows": 81349,
+      "expired_flows": 71565,
+      "new_flows": 71952
+    },
+    {
+      "concurrent_flows": 80799,
+      "expired_flows": 71952,
+      "new_flows": 71326
+    },
+    {
+      "concurrent_flows": 80267,
+      "expired_flows": 71326,
+      "new_flows": 71015
+    },
+    {
+      "concurrent_flows": 79716,
+      "expired_flows": 71015,
+      "new_flows": 70488
+    },
+    {
+      "concurrent_flows": 79500,
+      "expired_flows": 70488,
+      "new_flows": 70528
+    },
+    {
+      "concurrent_flows": 80102,
+      "expired_flows": 70528,
+      "new_flows": 70812
+    },
+    {
+      "concurrent_flows": 81037,
+      "expired_flows": 70811,
+      "new_flows": 71867
+    },
+    {
+      "concurrent_flows": 81186,
+      "expired_flows": 71868,
+      "new_flows": 71844
+    },
+    {
+      "concurrent_flows": 80470,
+      "expired_flows": 71844,
+      "new_flows": 71252
+    },
+    {
+      "concurrent_flows": 81127,
+      "expired_flows": 71252,
+      "new_flows": 71806
+    },
+    {
+      "concurrent_flows": 81222,
+      "expired_flows": 71806,
+      "new_flows": 72103
+    },
+    {
+      "concurrent_flows": 82477,
+      "expired_flows": 72103,
+      "new_flows": 73025
+    },
+    {
+      "concurrent_flows": 82558,
+      "expired_flows": 73025,
+      "new_flows": 73383
+    },
+    {
+      "concurrent_flows": 81508,
+      "expired_flows": 73383,
+      "new_flows": 72297
+    },
+    {
+      "concurrent_flows": 81528,
+      "expired_flows": 72296,
+      "new_flows": 72129
+    },
+    {
+      "concurrent_flows": 81268,
+      "expired_flows": 72130,
+      "new_flows": 71914
+    },
+    {
+      "concurrent_flows": 80408,
+      "expired_flows": 71913,
+      "new_flows": 71116
+    },
+    {
+      "concurrent_flows": 81726,
+      "expired_flows": 71117,
+      "new_flows": 72396
+    },
+    {
+      "concurrent_flows": 81345,
+      "expired_flows": 72396,
+      "new_flows": 71598
+    },
+    {
+      "concurrent_flows": 81489,
+      "expired_flows": 71598,
+      "new_flows": 72297
+    },
+    {
+      "concurrent_flows": 81194,
+      "expired_flows": 72297,
+      "new_flows": 71839
+    },
+    {
+      "concurrent_flows": 81256,
+      "expired_flows": 71839,
+      "new_flows": 72115
+    },
+    {
+      "concurrent_flows": 82018,
+      "expired_flows": 72115,
+      "new_flows": 72641
+    },
+    {
+      "concurrent_flows": 82117,
+      "expired_flows": 72641,
+      "new_flows": 72492
+    },
+    {
+      "concurrent_flows": 82855,
+      "expired_flows": 72492,
+      "new_flows": 73385
+    },
+    {
+      "concurrent_flows": 81190,
+      "expired_flows": 73385,
+      "new_flows": 71802
+    },
+    {
+      "concurrent_flows": 81335,
+      "expired_flows": 71801,
+      "new_flows": 72067
+    },
+    {
+      "concurrent_flows": 82108,
+      "expired_flows": 72068,
+      "new_flows": 72599
+    },
+    {
+      "concurrent_flows": 81594,
+      "expired_flows": 72599,
+      "new_flows": 72043
+    },
+    {
+      "concurrent_flows": 80583,
+      "expired_flows": 72043,
+      "new_flows": 71334
+    },
+    {
+      "concurrent_flows": 81417,
+      "expired_flows": 71334,
+      "new_flows": 72402
+    },
+    {
+      "concurrent_flows": 80955,
+      "expired_flows": 72402,
+      "new_flows": 71745
+    },
+    {
+      "concurrent_flows": 82490,
+      "expired_flows": 71745,
+      "new_flows": 73161
+    },
+    {
+      "concurrent_flows": 81056,
+      "expired_flows": 73161,
+      "new_flows": 71703
+    },
+    {
+      "concurrent_flows": 82333,
+      "expired_flows": 71703,
+      "new_flows": 73153
+    },
+    {
+      "concurrent_flows": 82621,
+      "expired_flows": 73153,
+      "new_flows": 73225
+    },
+    {
+      "concurrent_flows": 81328,
+      "expired_flows": 73225,
+      "new_flows": 72226
+    },
+    {
+      "concurrent_flows": 80435,
+      "expired_flows": 72226,
+      "new_flows": 71205
+    },
+    {
+      "concurrent_flows": 80827,
+      "expired_flows": 71205,
+      "new_flows": 71747
+    },
+    {
+      "concurrent_flows": 80971,
+      "expired_flows": 71747,
+      "new_flows": 71564
+    },
+    {
+      "concurrent_flows": 80922,
+      "expired_flows": 71564,
+      "new_flows": 71809
+    },
+    {
+      "concurrent_flows": 80801,
+      "expired_flows": 71809,
+      "new_flows": 71579
+    },
+    {
+      "concurrent_flows": 82288,
+      "expired_flows": 71579,
+      "new_flows": 73057
+    },
+    {
+      "concurrent_flows": 80980,
+      "expired_flows": 73057,
+      "new_flows": 71590
+    },
+    {
+      "concurrent_flows": 81919,
+      "expired_flows": 71590,
+      "new_flows": 72874
+    },
+    {
+      "concurrent_flows": 81903,
+      "expired_flows": 72874,
+      "new_flows": 72643
+    },
+    {
+      "concurrent_flows": 81416,
+      "expired_flows": 72643,
+      "new_flows": 72377
+    },
+    {
+      "concurrent_flows": 82135,
+      "expired_flows": 72377,
+      "new_flows": 72962
+    },
+    {
+      "concurrent_flows": 81584,
+      "expired_flows": 72962,
+      "new_flows": 72179
+    },
+    {
+      "concurrent_flows": 80568,
+      "expired_flows": 72179,
+      "new_flows": 71542
+    },
+    {
+      "concurrent_flows": 81029,
+      "expired_flows": 71542,
+      "new_flows": 71774
+    },
+    {
+      "concurrent_flows": 81921,
+      "expired_flows": 71774,
+      "new_flows": 72773
+    },
+    {
+      "concurrent_flows": 81845,
+      "expired_flows": 72772,
+      "new_flows": 72377
+    },
+    {
+      "concurrent_flows": 80950,
+      "expired_flows": 72378,
+      "new_flows": 71776
+    },
+    {
+      "concurrent_flows": 198,
+      "expired_flows": 45,
+      "new_flows": 50
+    },
+    {
+      "concurrent_flows": 81801,
+      "expired_flows": 71781,
+      "new_flows": 81801
+    },
+    {
+      "concurrent_flows": 81887,
+      "expired_flows": 81801,
+      "new_flows": 73781
+    },
+    {
+      "concurrent_flows": 82442,
+      "expired_flows": 73781,
+      "new_flows": 73356
+    },
+    {
+      "concurrent_flows": 81294,
+      "expired_flows": 73356,
+      "new_flows": 72260
+    },
+    {
+      "concurrent_flows": 81616,
+      "expired_flows": 72260,
+      "new_flows": 72472
+    },
+    {
+      "concurrent_flows": 82729,
+      "expired_flows": 72472,
+      "new_flows": 73506
+    },
+    {
+      "concurrent_flows": 82299,
+      "expired_flows": 73506,
+      "new_flows": 72693
+    },
+    {
+      "concurrent_flows": 81443,
+      "expired_flows": 72693,
+      "new_flows": 72002
+    },
+    {
+      "concurrent_flows": 81028,
+      "expired_flows": 72002,
+      "new_flows": 71660
+    },
+    {
+      "concurrent_flows": 81438,
+      "expired_flows": 71660,
+      "new_flows": 72122
+    },
+    {
+      "concurrent_flows": 81091,
+      "expired_flows": 72122,
+      "new_flows": 71856
+    },
+    {
+      "concurrent_flows": 81551,
+      "expired_flows": 71856,
+      "new_flows": 72052
+    },
+    {
+      "concurrent_flows": 81612,
+      "expired_flows": 72052,
+      "new_flows": 72080
+    },
+    {
+      "concurrent_flows": 81947,
+      "expired_flows": 72080,
+      "new_flows": 72507
+    },
+    {
+      "concurrent_flows": 81861,
+      "expired_flows": 72507,
+      "new_flows": 72399
+    },
+    {
+      "concurrent_flows": 82192,
+      "expired_flows": 72399,
+      "new_flows": 72897
+    },
+    {
+      "concurrent_flows": 82271,
+      "expired_flows": 72897,
+      "new_flows": 72687
+    },
+    {
+      "concurrent_flows": 83269,
+      "expired_flows": 72687,
+      "new_flows": 73688
+    },
+    {
+      "concurrent_flows": 52133,
+      "expired_flows": 39804,
+      "new_flows": 38919
+    },
+    {
+      "concurrent_flows": 80395,
+      "expired_flows": 72803,
+      "new_flows": 78646
+    },
+    {
+      "concurrent_flows": 81417,
+      "expired_flows": 78646,
+      "new_flows": 72634
+    },
+    {
+      "concurrent_flows": 84611,
+      "expired_flows": 72634,
+      "new_flows": 75320
+    },
+    {
+      "concurrent_flows": 81912,
+      "expired_flows": 75320,
+      "new_flows": 72798
+    },
+    {
+      "concurrent_flows": 82188,
+      "expired_flows": 72798,
+      "new_flows": 72951
+    },
+    {
+      "concurrent_flows": 81237,
+      "expired_flows": 72951,
+      "new_flows": 71896
+    },
+    {
+      "concurrent_flows": 81751,
+      "expired_flows": 71896,
+      "new_flows": 72481
+    },
+    {
+      "concurrent_flows": 82007,
+      "expired_flows": 72481,
+      "new_flows": 72574
+    },
+    {
+      "concurrent_flows": 82284,
+      "expired_flows": 72574,
+      "new_flows": 72871
+    },
+    {
+      "concurrent_flows": 81437,
+      "expired_flows": 72871,
+      "new_flows": 71986
+    },
+    {
+      "concurrent_flows": 81717,
+      "expired_flows": 71986,
+      "new_flows": 72283
+    },
+    {
+      "concurrent_flows": 82457,
+      "expired_flows": 72283,
+      "new_flows": 73118
+    },
+    {
+      "concurrent_flows": 82253,
+      "expired_flows": 73118,
+      "new_flows": 72678
+    },
+    {
+      "concurrent_flows": 81857,
+      "expired_flows": 72678,
+      "new_flows": 72510
+    },
+    {
+      "concurrent_flows": 83296,
+      "expired_flows": 72510,
+      "new_flows": 73872
+    },
+    {
+      "concurrent_flows": 81024,
+      "expired_flows": 73872,
+      "new_flows": 71673
+    },
+    {
+      "concurrent_flows": 80834,
+      "expired_flows": 71673,
+      "new_flows": 71690
+    },
+    {
+      "concurrent_flows": 81195,
+      "expired_flows": 71689,
+      "new_flows": 71805
+    },
+    {
+      "concurrent_flows": 80827,
+      "expired_flows": 71806,
+      "new_flows": 71506
+    },
+    {
+      "concurrent_flows": 81421,
+      "expired_flows": 71506,
+      "new_flows": 72072
+    },
+    {
+      "concurrent_flows": 81560,
+      "expired_flows": 72072,
+      "new_flows": 72220
+    },
+    {
+      "concurrent_flows": 81385,
+      "expired_flows": 72220,
+      "new_flows": 72032
+    },
+    {
+      "concurrent_flows": 80756,
+      "expired_flows": 72032,
+      "new_flows": 71439
+    },
+    {
+      "concurrent_flows": 81177,
+      "expired_flows": 71439,
+      "new_flows": 71993
+    },
+    {
+      "concurrent_flows": 81324,
+      "expired_flows": 71993,
+      "new_flows": 72103
+    },
+    {
+      "concurrent_flows": 80603,
+      "expired_flows": 72102,
+      "new_flows": 71167
+    },
+    {
+      "concurrent_flows": 80838,
+      "expired_flows": 71168,
+      "new_flows": 71602
+    },
+    {
+      "concurrent_flows": 80967,
+      "expired_flows": 71602,
+      "new_flows": 71753
+    },
+    {
+      "concurrent_flows": 81440,
+      "expired_flows": 71753,
+      "new_flows": 72041
+    },
+    {
+      "concurrent_flows": 81023,
+      "expired_flows": 72041,
+      "new_flows": 71583
+    },
+    {
+      "concurrent_flows": 81845,
+      "expired_flows": 71583,
+      "new_flows": 72524
+    },
+    {
+      "concurrent_flows": 80461,
+      "expired_flows": 72524,
+      "new_flows": 71142
+    },
+    {
+      "concurrent_flows": 80743,
+      "expired_flows": 71142,
+      "new_flows": 71528
+    },
+    {
+      "concurrent_flows": 81321,
+      "expired_flows": 71528,
+      "new_flows": 71905
+    },
+    {
+      "concurrent_flows": 80594,
+      "expired_flows": 71905,
+      "new_flows": 71372
+    },
+    {
+      "concurrent_flows": 82053,
+      "expired_flows": 71372,
+      "new_flows": 72693
+    },
+    {
+      "concurrent_flows": 81034,
+      "expired_flows": 72693,
+      "new_flows": 71623
+    },
+    {
+      "concurrent_flows": 81066,
+      "expired_flows": 71623,
+      "new_flows": 71703
+    },
+    {
+      "concurrent_flows": 80741,
+      "expired_flows": 71703,
+      "new_flows": 71509
+    },
+    {
+      "concurrent_flows": 81179,
+      "expired_flows": 71505,
+      "new_flows": 71918
+    },
+    {
+      "concurrent_flows": 80242,
+      "expired_flows": 71922,
+      "new_flows": 70916
+    },
+    {
+      "concurrent_flows": 81150,
+      "expired_flows": 70916,
+      "new_flows": 71599
+    },
+    {
+      "concurrent_flows": 81495,
+      "expired_flows": 71596,
+      "new_flows": 72299
+    },
+    {
+      "concurrent_flows": 80917,
+      "expired_flows": 72302,
+      "new_flows": 71595
+    },
+    {
+      "concurrent_flows": 81180,
+      "expired_flows": 71595,
+      "new_flows": 72034
+    },
+    {
+      "concurrent_flows": 83107,
+      "expired_flows": 72034,
+      "new_flows": 73973
+    },
+    {
+      "concurrent_flows": 80872,
+      "expired_flows": 73973,
+      "new_flows": 71611
+    },
+    {
+      "concurrent_flows": 80054,
+      "expired_flows": 71611,
+      "new_flows": 70968
+    },
+    {
+      "concurrent_flows": 80168,
+      "expired_flows": 70968,
+      "new_flows": 71196
+    },
+    {
+      "concurrent_flows": 80029,
+      "expired_flows": 71196,
+      "new_flows": 71068
+    },
+    {
+      "concurrent_flows": 80517,
+      "expired_flows": 71068,
+      "new_flows": 71346
+    },
+    {
+      "concurrent_flows": 80342,
+      "expired_flows": 71346,
+      "new_flows": 71212
+    },
+    {
+      "concurrent_flows": 80998,
+      "expired_flows": 71212,
+      "new_flows": 71659
+    },
+    {
+      "concurrent_flows": 81440,
+      "expired_flows": 71659,
+      "new_flows": 72231
+    },
+    {
+      "concurrent_flows": 81632,
+      "expired_flows": 72231,
+      "new_flows": 72296
+    },
+    {
+      "concurrent_flows": 82256,
+      "expired_flows": 72296,
+      "new_flows": 72884
+    },
+    {
+      "concurrent_flows": 81965,
+      "expired_flows": 72884,
+      "new_flows": 72861
+    },
+    {
+      "concurrent_flows": 81210,
+      "expired_flows": 72861,
+      "new_flows": 72132
+    },
+    {
+      "concurrent_flows": 81021,
+      "expired_flows": 72132,
+      "new_flows": 71908
+    },
+    {
+      "concurrent_flows": 81811,
+      "expired_flows": 71908,
+      "new_flows": 72673
+    },
+    {
+      "concurrent_flows": 82819,
+      "expired_flows": 72672,
+      "new_flows": 73515
+    },
+    {
+      "concurrent_flows": 81481,
+      "expired_flows": 73516,
+      "new_flows": 72260
+    },
+    {
+      "concurrent_flows": 82109,
+      "expired_flows": 72260,
+      "new_flows": 72639
+    },
+    {
+      "concurrent_flows": 82601,
+      "expired_flows": 72639,
+      "new_flows": 73256
+    },
+    {
+      "concurrent_flows": 81301,
+      "expired_flows": 73256,
+      "new_flows": 72093
+    },
+    {
+      "concurrent_flows": 80478,
+      "expired_flows": 72093,
+      "new_flows": 71379
+    },
+    {
+      "concurrent_flows": 81845,
+      "expired_flows": 71379,
+      "new_flows": 72636
+    },
+    {
+      "concurrent_flows": 81725,
+      "expired_flows": 72636,
+      "new_flows": 72512
+    },
+    {
+      "concurrent_flows": 81767,
+      "expired_flows": 72512,
+      "new_flows": 72639
+    },
+    {
+      "concurrent_flows": 81202,
+      "expired_flows": 72639,
+      "new_flows": 71881
+    },
+    {
+      "concurrent_flows": 81717,
+      "expired_flows": 71881,
+      "new_flows": 72764
+    },
+    {
+      "concurrent_flows": 81285,
+      "expired_flows": 72764,
+      "new_flows": 72027
+    },
+    {
+      "concurrent_flows": 81537,
+      "expired_flows": 72027,
+      "new_flows": 72244
+    },
+    {
+      "concurrent_flows": 81603,
+      "expired_flows": 72244,
+      "new_flows": 72577
+    },
+    {
+      "concurrent_flows": 46948,
+      "expired_flows": 33626,
+      "new_flows": 33255
+    },
+    {
+      "concurrent_flows": 79360,
+      "expired_flows": 72206,
+      "new_flows": 79359
+    },
+    {
+      "concurrent_flows": 81437,
+      "expired_flows": 79359,
+      "new_flows": 72962
+    },
+    {
+      "concurrent_flows": 81215,
+      "expired_flows": 72962,
+      "new_flows": 72393
+    },
+    {
+      "concurrent_flows": 82219,
+      "expired_flows": 72393,
+      "new_flows": 73313
+    },
+    {
+      "concurrent_flows": 82605,
+      "expired_flows": 73313,
+      "new_flows": 73513
+    },
+    {
+      "concurrent_flows": 82105,
+      "expired_flows": 73513,
+      "new_flows": 73006
+    },
+    {
+      "concurrent_flows": 81344,
+      "expired_flows": 73006,
+      "new_flows": 72095
+    },
+    {
+      "concurrent_flows": 82192,
+      "expired_flows": 72095,
+      "new_flows": 72924
+    },
+    {
+      "concurrent_flows": 81687,
+      "expired_flows": 72924,
+      "new_flows": 72482
+    },
+    {
+      "concurrent_flows": 81669,
+      "expired_flows": 72482,
+      "new_flows": 72562
+    },
+    {
+      "concurrent_flows": 80706,
+      "expired_flows": 72562,
+      "new_flows": 71447
+    },
+    {
+      "concurrent_flows": 81241,
+      "expired_flows": 71447,
+      "new_flows": 72046
+    },
+    {
+      "concurrent_flows": 80752,
+      "expired_flows": 72046,
+      "new_flows": 71688
+    },
+    {
+      "concurrent_flows": 80709,
+      "expired_flows": 71688,
+      "new_flows": 71624
+    },
+    {
+      "concurrent_flows": 81002,
+      "expired_flows": 71624,
+      "new_flows": 71880
+    },
+    {
+      "concurrent_flows": 80671,
+      "expired_flows": 71880,
+      "new_flows": 71430
+    },
+    {
+      "concurrent_flows": 81399,
+      "expired_flows": 71430,
+      "new_flows": 72109
+    },
+    {
+      "concurrent_flows": 80755,
+      "expired_flows": 72109,
+      "new_flows": 71690
+    },
+    {
+      "concurrent_flows": 80768,
+      "expired_flows": 71690,
+      "new_flows": 71551
+    },
+    {
+      "concurrent_flows": 79875,
+      "expired_flows": 71551,
+      "new_flows": 70779
+    },
+    {
+      "concurrent_flows": 80996,
+      "expired_flows": 70779,
+      "new_flows": 71815
+    },
+    {
+      "concurrent_flows": 82143,
+      "expired_flows": 71814,
+      "new_flows": 73044
+    },
+    {
+      "concurrent_flows": 81877,
+      "expired_flows": 73045,
+      "new_flows": 72447
+    },
+    {
+      "concurrent_flows": 80860,
+      "expired_flows": 72447,
+      "new_flows": 71575
+    },
+    {
+      "concurrent_flows": 81711,
+      "expired_flows": 71574,
+      "new_flows": 72520
+    },
+    {
+      "concurrent_flows": 81334,
+      "expired_flows": 72521,
+      "new_flows": 71964
+    },
+    {
+      "concurrent_flows": 81271,
+      "expired_flows": 71964,
+      "new_flows": 72114
+    },
+    {
+      "concurrent_flows": 81710,
+      "expired_flows": 72114,
+      "new_flows": 72593
+    },
+    {
+      "concurrent_flows": 81334,
+      "expired_flows": 72593,
+      "new_flows": 71886
+    },
+    {
+      "concurrent_flows": 81155,
+      "expired_flows": 71886,
+      "new_flows": 71863
+    },
+    {
+      "concurrent_flows": 81338,
+      "expired_flows": 71863,
+      "new_flows": 72191
+    },
+    {
+      "concurrent_flows": 81128,
+      "expired_flows": 72191,
+      "new_flows": 71815
+    },
+    {
+      "concurrent_flows": 81427,
+      "expired_flows": 71815,
+      "new_flows": 72196
+    },
+    {
+      "concurrent_flows": 80694,
+      "expired_flows": 72196,
+      "new_flows": 71581
+    },
+    {
+      "concurrent_flows": 80943,
+      "expired_flows": 71581,
+      "new_flows": 71906
+    },
+    {
+      "concurrent_flows": 81599,
+      "expired_flows": 71906,
+      "new_flows": 72397
+    },
+    {
+      "concurrent_flows": 81492,
+      "expired_flows": 72397,
+      "new_flows": 72352
+    },
+    {
+      "concurrent_flows": 80671,
+      "expired_flows": 72352,
+      "new_flows": 71464
+    },
+    {
+      "concurrent_flows": 81771,
+      "expired_flows": 71464,
+      "new_flows": 72710
+    },
+    {
+      "concurrent_flows": 81518,
+      "expired_flows": 72710,
+      "new_flows": 72283
+    },
+    {
+      "concurrent_flows": 81137,
+      "expired_flows": 72283,
+      "new_flows": 71676
+    },
+    {
+      "concurrent_flows": 81543,
+      "expired_flows": 71676,
+      "new_flows": 72169
+    },
+    {
+      "concurrent_flows": 81741,
+      "expired_flows": 72169,
+      "new_flows": 72428
+    },
+    {
+      "concurrent_flows": 82578,
+      "expired_flows": 72428,
+      "new_flows": 73056
+    },
+    {
+      "concurrent_flows": 82732,
+      "expired_flows": 73056,
+      "new_flows": 73371
+    },
+    {
+      "concurrent_flows": 81374,
+      "expired_flows": 73371,
+      "new_flows": 72019
+    },
+    {
+      "concurrent_flows": 82185,
+      "expired_flows": 72016,
+      "new_flows": 72851
+    },
+    {
+      "concurrent_flows": 82210,
+      "expired_flows": 72854,
+      "new_flows": 72876
+    },
+    {
+      "concurrent_flows": 81804,
+      "expired_flows": 72876,
+      "new_flows": 72460
+    },
+    {
+      "concurrent_flows": 37977,
+      "expired_flows": 72460,
+      "new_flows": 33213
+    },
+    {
+      "concurrent_flows": 82456,
+      "expired_flows": 33213,
+      "new_flows": 73376
+    },
+    {
+      "concurrent_flows": 81845,
+      "expired_flows": 73376,
+      "new_flows": 72799
+    },
+    {
+      "concurrent_flows": 81244,
+      "expired_flows": 72799,
+      "new_flows": 72129
+    },
+    {
+      "concurrent_flows": 81391,
+      "expired_flows": 72129,
+      "new_flows": 72106
+    },
+    {
+      "concurrent_flows": 81066,
+      "expired_flows": 72106,
+      "new_flows": 71854
+    },
+    {
+      "concurrent_flows": 80785,
+      "expired_flows": 71854,
+      "new_flows": 71638
+    },
+    {
+      "concurrent_flows": 81241,
+      "expired_flows": 71638,
+      "new_flows": 71819
+    },
+    {
+      "concurrent_flows": 81462,
+      "expired_flows": 71819,
+      "new_flows": 72298
+    },
+    {
+      "concurrent_flows": 81252,
+      "expired_flows": 72298,
+      "new_flows": 71916
+    },
+    {
+      "concurrent_flows": 81450,
+      "expired_flows": 71916,
+      "new_flows": 71945
+    },
+    {
+      "concurrent_flows": 80220,
+      "expired_flows": 71945,
+      "new_flows": 71108
+    },
+    {
+      "concurrent_flows": 80087,
+      "expired_flows": 71108,
+      "new_flows": 70967
+    },
+    {
+      "concurrent_flows": 81024,
+      "expired_flows": 70967,
+      "new_flows": 71880
+    },
+    {
+      "concurrent_flows": 81229,
+      "expired_flows": 71880,
+      "new_flows": 72040
+    },
+    {
+      "concurrent_flows": 80531,
+      "expired_flows": 72040,
+      "new_flows": 71154
+    },
+    {
+      "concurrent_flows": 79722,
+      "expired_flows": 71154,
+      "new_flows": 70489
+    },
+    {
+      "concurrent_flows": 81015,
+      "expired_flows": 70489,
+      "new_flows": 71959
+    },
+    {
+      "concurrent_flows": 81001,
+      "expired_flows": 71959,
+      "new_flows": 71772
+    },
+    {
+      "concurrent_flows": 79628,
+      "expired_flows": 71772,
+      "new_flows": 70486
+    },
+    {
+      "concurrent_flows": 80488,
+      "expired_flows": 70486,
+      "new_flows": 71542
+    },
+    {
+      "concurrent_flows": 80368,
+      "expired_flows": 71542,
+      "new_flows": 71248
+    },
+    {
+      "concurrent_flows": 80281,
+      "expired_flows": 71248,
+      "new_flows": 70983
+    },
+    {
+      "concurrent_flows": 80672,
+      "expired_flows": 70983,
+      "new_flows": 71465
+    },
+    {
+      "concurrent_flows": 81130,
+      "expired_flows": 71465,
+      "new_flows": 71666
+    },
+    {
+      "concurrent_flows": 81442,
+      "expired_flows": 71666,
+      "new_flows": 72049
+    },
+    {
+      "concurrent_flows": 81597,
+      "expired_flows": 72049,
+      "new_flows": 72238
+    },
+    {
+      "concurrent_flows": 80600,
+      "expired_flows": 72236,
+      "new_flows": 71409
+    },
+    {
+      "concurrent_flows": 80458,
+      "expired_flows": 71411,
+      "new_flows": 71181
+    },
+    {
+      "concurrent_flows": 81183,
+      "expired_flows": 71181,
+      "new_flows": 71850
+    },
+    {
+      "concurrent_flows": 80846,
+      "expired_flows": 71850,
+      "new_flows": 71405
+    },
+    {
+      "concurrent_flows": 81370,
+      "expired_flows": 71405,
+      "new_flows": 72233
+    },
+    {
+      "concurrent_flows": 80254,
+      "expired_flows": 72233,
+      "new_flows": 71212
+    },
+    {
+      "concurrent_flows": 81042,
+      "expired_flows": 71212,
+      "new_flows": 71995
+    },
+    {
+      "concurrent_flows": 80686,
+      "expired_flows": 71995,
+      "new_flows": 71423
+    },
+    {
+      "concurrent_flows": 80952,
+      "expired_flows": 71423,
+      "new_flows": 71544
+    },
+    {
+      "concurrent_flows": 81368,
+      "expired_flows": 71544,
+      "new_flows": 72239
+    },
+    {
+      "concurrent_flows": 81928,
+      "expired_flows": 72239,
+      "new_flows": 72548
+    },
+    {
+      "concurrent_flows": 80635,
+      "expired_flows": 72548,
+      "new_flows": 71658
+    },
+    {
+      "concurrent_flows": 80533,
+      "expired_flows": 71657,
+      "new_flows": 71145
+    },
+    {
+      "concurrent_flows": 81168,
+      "expired_flows": 71146,
+      "new_flows": 72136
+    },
+    {
+      "concurrent_flows": 79808,
+      "expired_flows": 72136,
+      "new_flows": 70617
+    },
+    {
+      "concurrent_flows": 81367,
+      "expired_flows": 70617,
+      "new_flows": 72186
+    },
+    {
+      "concurrent_flows": 80711,
+      "expired_flows": 72186,
+      "new_flows": 71284
+    },
+    {
+      "concurrent_flows": 80759,
+      "expired_flows": 71284,
+      "new_flows": 71623
+    },
+    {
+      "concurrent_flows": 36844,
+      "expired_flows": 71623,
+      "new_flows": 32194
+    },
+    {
+      "concurrent_flows": 80550,
+      "expired_flows": 32194,
+      "new_flows": 71573
+    },
+    {
+      "concurrent_flows": 80084,
+      "expired_flows": 71573,
+      "new_flows": 71032
+    },
+    {
+      "concurrent_flows": 80526,
+      "expired_flows": 71032,
+      "new_flows": 71379
+    },
+    {
+      "concurrent_flows": 80402,
+      "expired_flows": 71378,
+      "new_flows": 71195
+    },
+    {
+      "concurrent_flows": 80468,
+      "expired_flows": 71196,
+      "new_flows": 71299
+    },
+    {
+      "concurrent_flows": 81382,
+      "expired_flows": 71299,
+      "new_flows": 72020
+    },
+    {
+      "concurrent_flows": 81296,
+      "expired_flows": 72020,
+      "new_flows": 72158
+    },
+    {
+      "concurrent_flows": 81984,
+      "expired_flows": 72158,
+      "new_flows": 72700
+    },
+    {
+      "concurrent_flows": 82113,
+      "expired_flows": 72700,
+      "new_flows": 72909
+    },
+    {
+      "concurrent_flows": 82315,
+      "expired_flows": 72909,
+      "new_flows": 73093
+    },
+    {
+      "concurrent_flows": 81596,
+      "expired_flows": 73093,
+      "new_flows": 72178
+    },
+    {
+      "concurrent_flows": 81160,
+      "expired_flows": 72178,
+      "new_flows": 71970
+    },
+    {
+      "concurrent_flows": 81194,
+      "expired_flows": 71970,
+      "new_flows": 72056
+    },
+    {
+      "concurrent_flows": 81828,
+      "expired_flows": 72056,
+      "new_flows": 72575
+    },
+    {
+      "concurrent_flows": 81829,
+      "expired_flows": 72575,
+      "new_flows": 72349
+    },
+    {
+      "concurrent_flows": 81189,
+      "expired_flows": 72349,
+      "new_flows": 71897
+    },
+    {
+      "concurrent_flows": 80835,
+      "expired_flows": 71897,
+      "new_flows": 71662
+    },
+    {
+      "concurrent_flows": 81932,
+      "expired_flows": 71662,
+      "new_flows": 72694
+    },
+    {
+      "concurrent_flows": 80841,
+      "expired_flows": 72694,
+      "new_flows": 71476
+    },
+    {
+      "concurrent_flows": 81249,
+      "expired_flows": 71476,
+      "new_flows": 72053
+    },
+    {
+      "concurrent_flows": 81524,
+      "expired_flows": 72053,
+      "new_flows": 72241
+    },
+    {
+      "concurrent_flows": 81626,
+      "expired_flows": 72241,
+      "new_flows": 72241
+    },
+    {
+      "concurrent_flows": 83054,
+      "expired_flows": 72241,
+      "new_flows": 73760
+    },
+    {
+      "concurrent_flows": 82086,
+      "expired_flows": 73760,
+      "new_flows": 72641
+    },
+    {
+      "concurrent_flows": 81917,
+      "expired_flows": 72641,
+      "new_flows": 72630
+    },
+    {
+      "concurrent_flows": 81201,
+      "expired_flows": 72630,
+      "new_flows": 72119
+    },
+    {
+      "concurrent_flows": 81396,
+      "expired_flows": 72119,
+      "new_flows": 72179
+    },
+    {
+      "concurrent_flows": 80839,
+      "expired_flows": 72179,
+      "new_flows": 71728
+    },
+    {
+      "concurrent_flows": 81372,
+      "expired_flows": 71728,
+      "new_flows": 72090
+    },
+    {
+      "concurrent_flows": 82456,
+      "expired_flows": 72090,
+      "new_flows": 73244
+    },
+    {
+      "concurrent_flows": 82610,
+      "expired_flows": 73244,
+      "new_flows": 73368
+    },
+    {
+      "concurrent_flows": 81680,
+      "expired_flows": 73368,
+      "new_flows": 72370
+    },
+    {
+      "concurrent_flows": 81618,
+      "expired_flows": 72370,
+      "new_flows": 72295
+    },
+    {
+      "concurrent_flows": 81521,
+      "expired_flows": 72295,
+      "new_flows": 72286
+    },
+    {
+      "concurrent_flows": 80649,
+      "expired_flows": 72286,
+      "new_flows": 71365
+    },
+    {
+      "concurrent_flows": 80718,
+      "expired_flows": 71365,
+      "new_flows": 71628
+    },
+    {
+      "concurrent_flows": 81496,
+      "expired_flows": 71628,
+      "new_flows": 72478
+    },
+    {
+      "concurrent_flows": 81873,
+      "expired_flows": 72478,
+      "new_flows": 72563
+    },
+    {
+      "concurrent_flows": 81842,
+      "expired_flows": 72563,
+      "new_flows": 72798
+    },
+    {
+      "concurrent_flows": 81641,
+      "expired_flows": 72797,
+      "new_flows": 72556
+    },
+    {
+      "concurrent_flows": 81346,
+      "expired_flows": 72557,
+      "new_flows": 72208
+    },
+    {
+      "concurrent_flows": 81307,
+      "expired_flows": 72207,
+      "new_flows": 72082
+    },
+    {
+      "concurrent_flows": 81473,
+      "expired_flows": 72083,
+      "new_flows": 72307
+    },
+    {
+      "concurrent_flows": 81343,
+      "expired_flows": 72307,
+      "new_flows": 72091
+    },
+    {
+      "concurrent_flows": 80990,
+      "expired_flows": 72091,
+      "new_flows": 71713
+    },
+    {
+      "concurrent_flows": 81158,
+      "expired_flows": 71713,
+      "new_flows": 72203
+    },
+    {
+      "concurrent_flows": 81907,
+      "expired_flows": 72203,
+      "new_flows": 72664
+    },
+    {
+      "concurrent_flows": 82924,
+      "expired_flows": 72664,
+      "new_flows": 73949
+    },
+    {
+      "concurrent_flows": 81541,
+      "expired_flows": 73949,
+      "new_flows": 72091
+    },
+    {
+      "concurrent_flows": 82118,
+      "expired_flows": 72091,
+      "new_flows": 72847
+    },
+    {
+      "concurrent_flows": 80688,
+      "expired_flows": 72847,
+      "new_flows": 71612
+    },
+    {
+      "concurrent_flows": 81522,
+      "expired_flows": 71612,
+      "new_flows": 72305
+    },
+    {
+      "concurrent_flows": 82091,
+      "expired_flows": 72305,
+      "new_flows": 72894
+    },
+    {
+      "concurrent_flows": 81514,
+      "expired_flows": 72894,
+      "new_flows": 72357
+    },
+    {
+      "concurrent_flows": 81990,
+      "expired_flows": 72357,
+      "new_flows": 72795
+    },
+    {
+      "concurrent_flows": 81963,
+      "expired_flows": 72795,
+      "new_flows": 72803
+    },
+    {
+      "concurrent_flows": 81845,
+      "expired_flows": 72803,
+      "new_flows": 72565
+    },
+    {
+      "concurrent_flows": 82446,
+      "expired_flows": 72565,
+      "new_flows": 73090
+    },
+    {
+      "concurrent_flows": 82344,
+      "expired_flows": 73090,
+      "new_flows": 72996
+    },
+    {
+      "concurrent_flows": 83048,
+      "expired_flows": 72996,
+      "new_flows": 73853
+    },
+    {
+      "concurrent_flows": 90933,
+      "expired_flows": 73853,
+      "new_flows": 81752
+    },
+    {
+      "concurrent_flows": 81965,
+      "expired_flows": 81752,
+      "new_flows": 72767
+    },
+    {
+      "concurrent_flows": 54491,
+      "expired_flows": 42049,
+      "new_flows": 41379
+    }
+  ],
   "flow_dts_us_avg": 22321199.173770595,
   "flow_dts_us_cdf": {
     "probabilities": [
@@ -240,6 +3232,7 @@
       21901782
     ]
   },
+  "total_bytes": 333383874287,
   "total_flows": 21901782,
   "total_pkts": 375864712,
   "total_symm_flows": 21901782

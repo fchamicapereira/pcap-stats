@@ -4,6 +4,7 @@
 #include "pcap_reader.h"
 #include "clock.h"
 #include "cdf.h"
+#include "flow_tracker.h"
 
 #include <filesystem>
 #include <vector>
@@ -16,10 +17,17 @@ struct flow_ts {
   std::vector<time_ns_t> dts;
 };
 
+struct epoch_t {
+  u64 expired_flows;
+  u64 new_flows;
+  u64 concurrent_flows;
+};
+
 struct report_t {
   time_ns_t start;
   time_ns_t end;
   u64 total_pkts;
+  u64 total_bytes;
   u64 tcpudp_pkts;
   CDF pkt_sizes_cdf;
   u64 total_flows;
@@ -30,6 +38,7 @@ struct report_t {
   CDF top_k_flows_bytes_cdf;
   CDF flow_duration_us_cdf;
   CDF flow_dts_us_cdf;
+  std::vector<epoch_t> epochs;
 
   report_t() : start(0), end(0), total_pkts(0), tcpudp_pkts(0), total_flows(0), total_symm_flows(0) {}
 };
@@ -40,16 +49,18 @@ struct traffic_stats_tracker_t {
   std::unordered_set<flow_t, flow_t::flow_hash_t> flows;
   std::unordered_set<sflow_t, sflow_t::flow_hash_t> symm_flows;
   std::vector<std::unordered_set<flow_t, flow_t::flow_hash_t>> concurrent_flows_per_epoch;
+  std::vector<u64> expired_flows_per_epoch;
   std::vector<u64> new_flows_per_epoch;
-
+  FlowTracker flow_tracker;
   std::unordered_map<flow_t, u64, sflow_t::flow_hash_t> pkts_per_flow;
   std::unordered_map<flow_t, u64, sflow_t::flow_hash_t> bytes_per_flow;
   std::unordered_map<flow_t, flow_ts, sflow_t::flow_hash_t> flow_times;
 
   report_t report;
 
-  traffic_stats_tracker_t(time_ns_t _epoch_duration) : clock(_epoch_duration) {
+  traffic_stats_tracker_t(time_ns_t _epoch_duration) : clock(_epoch_duration), flow_tracker(100'000'000) {
     concurrent_flows_per_epoch.emplace_back();
+    expired_flows_per_epoch.emplace_back();
     new_flows_per_epoch.emplace_back();
   }
 

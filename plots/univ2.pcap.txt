@@ -1,0 +1,18 @@
++----------------------------------------------------------------+
+|                     Report for univ2.pcap                      |
++----------------------------------+-----------------------------+
+| Total pkts                       | 100,000,000                 |
+| Total pkt bytes                  | 76,099,607,984 bytes        |
+| Avg pkt size                     | 761 bytes                   |
+| Bytes on the wire                | 78,099,607,984 bytes        |
+| Packet rate                      | 64,216,677 bps (10,548 pps) |
+| Elapsed                          | 2 hours and 38 minutes      |
+| Avg epoch duration               | 1 second                    |
+| Epochs                           | 8,369                       |
+| Avg churn                        | 11,003 flows/min            |
+| Churn stdev                      | 7,237 flows/min             |
+| Avg new flows per epoch          | 208                         |
+| Stdev new flows per epoch        | 137                         |
+| Avg concurrent flows per epoch   | 223                         |
+| Stdev concurrent flows per epoch | 147                         |
++----------------------------------+-----------------------------+
