@@ -3,6 +3,7 @@
 #include "types.h"
 
 #include <map>
+#include <vector>
 #include <cmath>
 
 class CDF {
@@ -22,6 +23,18 @@ public:
   void add(u64 value, u64 count) {
     values[value] += count;
     total += count;
+  }
+
+  const std::map<u64, u64> &get_values() const { return values; }
+
+  std::vector<double> get_relative_values() const {
+    u64 cumulative = 0;
+    std::vector<double> relative_values;
+    for (const auto &[value, count] : values) {
+      cumulative += count;
+      relative_values.push_back(static_cast<double>(cumulative) / total);
+    }
+    return relative_values;
   }
 
   std::map<u64, double> get_cdf() const {

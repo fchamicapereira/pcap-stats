@@ -10,6 +10,9 @@
 #include <vector>
 #include <unordered_set>
 #include <unordered_map>
+#include <array>
+
+static constexpr const size_t BATCH_SIZE = 32;
 
 struct flow_ts {
   time_ns_t first;
@@ -38,9 +41,22 @@ struct report_t {
   CDF top_k_flows_bytes_cdf;
   CDF flow_duration_us_cdf;
   CDF flow_dts_us_cdf;
+  std::map<double, flow_t> relative_pkts_per_flow;
   std::vector<epoch_t> epochs;
 
-  report_t() : start(0), end(0), total_pkts(0), tcpudp_pkts(0), total_flows(0), total_symm_flows(0) {}
+  std::array<u64, 32> batch32_stride_sizes_unsorted;
+  std::array<u64, 32> batch32_stride_sizes_sorted;
+
+  std::array<u64, 64> batch64_stride_sizes_unsorted;
+  std::array<u64, 64> batch64_stride_sizes_sorted;
+
+  std::array<u64, 128> batch128_stride_sizes_unsorted;
+  std::array<u64, 128> batch128_stride_sizes_sorted;
+
+  report_t()
+      : start(0), end(0), total_pkts(0), tcpudp_pkts(0), total_flows(0), total_symm_flows(0), batch32_stride_sizes_unsorted({}),
+        batch32_stride_sizes_sorted({}), batch64_stride_sizes_unsorted({}), batch64_stride_sizes_sorted({}), batch128_stride_sizes_unsorted({}),
+        batch128_stride_sizes_sorted({}) {}
 };
 
 struct traffic_stats_tracker_t {
@@ -55,6 +71,9 @@ struct traffic_stats_tracker_t {
   std::unordered_map<flow_t, u64, sflow_t::flow_hash_t> pkts_per_flow;
   std::unordered_map<flow_t, u64, sflow_t::flow_hash_t> bytes_per_flow;
   std::unordered_map<flow_t, flow_ts, sflow_t::flow_hash_t> flow_times;
+  std::vector<std::optional<flow_t>> batch32;
+  std::vector<std::optional<flow_t>> batch64;
+  std::vector<std::optional<flow_t>> batch128;
 
   report_t report;
 
@@ -67,4 +86,24 @@ struct traffic_stats_tracker_t {
   void feed_packet(const packet_t &pkt);
   void generate_report();
   void dump_report_to_json_file(const std::filesystem::path &json_output_report) const;
+
+  static void sort_batch(std::vector<std::optional<flow_t>> &batch);
+
+  template <size_t BATCH_SIZE> static void process_batch(const std::vector<std::optional<flow_t>> &batch, std::array<u64, BATCH_SIZE> &stride_sizes) {
+    assert(batch.size() == BATCH_SIZE);
+    std::vector<u8> strides;
+    strides.push_back(1);
+
+    for (u8 i = 0; i < BATCH_SIZE - 1; i++) {
+      if (batch[i].has_value() == batch[i + 1].has_value() && (!batch[i].has_value() || batch[i].value() == batch[i + 1].value())) {
+        strides.back()++;
+      } else {
+        strides.push_back(1);
+      }
+    }
+
+    for (u8 stride : strides) {
+      stride_sizes[stride - 1]++;
+    }
+  }
 };

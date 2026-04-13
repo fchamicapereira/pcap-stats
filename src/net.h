@@ -120,6 +120,24 @@ struct flow_t {
     }
   }
 
+  std::string to_string() const {
+    std::stringstream ss;
+    switch (type) {
+    case FlowType::FiveTuple:
+      ss << ipv4_to_str(five_tuple.src_ip);
+      ss << ":";
+      ss << bswap16(five_tuple.src_port);
+
+      ss << " -> ";
+
+      ss << ipv4_to_str(five_tuple.dst_ip);
+      ss << ":";
+      ss << bswap16(five_tuple.dst_port);
+      break;
+    }
+    return ss.str();
+  }
+
   flow_t &operator=(const flow_t &flow) {
     if (this == &flow) {
       return *this;
@@ -181,23 +199,7 @@ struct flow_t {
 };
 
 inline std::ostream &operator<<(std::ostream &os, const flow_t &flow) {
-  os << "{";
-
-  switch (flow.type) {
-  case FlowType::FiveTuple:
-    os << ipv4_to_str(flow.five_tuple.src_ip);
-    os << ":";
-    os << bswap16(flow.five_tuple.src_port);
-
-    os << " -> ";
-
-    os << ipv4_to_str(flow.five_tuple.dst_ip);
-    os << ":";
-    os << bswap16(flow.five_tuple.dst_port);
-    break;
-  }
-
-  os << "}";
+  os << flow.to_string();
   return os;
 }
 
